@@ -18,6 +18,7 @@ from .rules import (
 YEAR_PATTERN = re.compile(r"\b(18\d{2}|19\d{2}|20\d{2})\b")
 SENTENCE_SPLIT_PATTERN = re.compile(r"(?<=[.!?])\s+")
 CAPITALIZED_NGRAM_PATTERN = re.compile(r"\b([A-Z][A-Za-z\-']+(?:\s+[A-Z][A-Za-z\-']+){0,4})\b")
+TOKEN_PATTERN = re.compile(r"[A-Za-z][A-Za-z\-']*|\d+|[^\w\s]")
 
 
 @dataclass
@@ -105,9 +106,218 @@ def extract_candidate_mentions(sentence: str) -> List[Tuple[str, str, str]]:
     return found
 
 
-def extract_mentions(corpus_rows: Iterable[Dict[str, str]]) -> List[Mention]:
-    mentions: List[Mention] = []
+def tokenize_with_offsets(sentence: str) -> List[Tuple[str, int, int]]:
+    return [(m.group(0), m.start(), m.end()) for m in TOKEN_PATTERN.finditer(sentence)]
+
+
+def sentence_to_token_features(tokens: List[str], idx: int) -> Dict[str, str | bool]:
+    token = tokens[idx]
+    feats: Dict[str, str | bool] = {
+        "bias": True,
+        "w.lower": token.lower(),
+        "w.istitle": token.istitle(),
+        "w.isupper": token.isupper(),
+        "w.isdigit": token.isdigit(),
+        "w.prefix2": token[:2].lower(),
+        "w.suffix2": token[-2:].lower(),
+        "w.prefix3": token[:3].lower(),
+        "w.suffix3": token[-3:].lower(),
+    }
+
+    if idx > 0:
+        prev = tokens[idx - 1]
+        feats.update(
+            {
+                "-1:w.lower": prev.lower(),
+                "-1:w.istitle": prev.istitle(),
+                "-1:w.isupper": prev.isupper(),
+            }
+        )
+    else:
+        feats["BOS"] = True
+
+    if idx < len(tokens) - 1:
+        nxt = tokens[idx + 1]
+        feats.update(
+            {
+                "+1:w.lower": nxt.lower(),
+                "+1:w.istitle": nxt.istitle(),
+                "+1:w.isupper": nxt.isupper(),
+            }
+        )
+    else:
+        feats["EOS"] = True
+
+    return feats
+
+
+def weak_label_tokens(tokens: List[str]) -> List[str]:
+    tags = ["O"] * len(tokens)
+    lowered = [t.lower() for t in tokens]
+
+    spans: List[Tuple[int, int, str, int]] = []
+    for label, names in GAZETTEER.items():
+        for name in names:
+            name_tokens = TOKEN_PATTERN.findall(name)
+            if not name_tokens:
+                continue
+            n = len(name_tokens)
+            name_lowered = [t.lower() for t in name_tokens]
+            for i in range(0, len(tokens) - n + 1):
+                if lowered[i : i + n] == name_lowered:
+                    spans.append((i, i + n, label, n))
+
+    spans.sort(key=lambda x: x[3], reverse=True)
+
+    used = set()
+    for start, end, label, _ in spans:
+        if any(i in used for i in range(start, end)):
+            continue
+        tags[start] = f"B-{label}"
+        for i in range(start + 1, end):
+            tags[i] = f"I-{label}"
+        used.update(range(start, end))
+
+    return tags
+
+
+def decode_bio_mentions(sentence: str, tokens_with_offsets: List[Tuple[str, int, int]], tags: List[str]) -> List[Tuple[str, str, str]]:
+    mentions: List[Tuple[str, str, str]] = []
+    active_label = ""
+    active_start = -1
+    active_end = -1
+
+    def flush() -> None:
+        nonlocal active_label, active_start, active_end
+        if active_label and active_start >= 0 and active_end > active_start:
+            mention_text = sentence[active_start:active_end]
+            canonical = normalize_name(mention_text)
+            if canonical:
+                mentions.append((mention_text, canonical, active_label))
+        active_label = ""
+        active_start = -1
+        active_end = -1
+
+    for idx, tag in enumerate(tags):
+        token, start, end = tokens_with_offsets[idx]
+        _ = token
+        if tag == "O":
+            flush()
+            continue
+
+        if "-" not in tag:
+            flush()
+            continue
+
+        prefix, label = tag.split("-", 1)
+        if label not in ENTITY_LABELS:
+            flush()
+            continue
+
+        if prefix == "B":
+            flush()
+            active_label = label
+            active_start = start
+            active_end = end
+            continue
+
+        if prefix == "I" and active_label == label and active_start >= 0:
+            active_end = end
+            continue
+
+        flush()
+
+    flush()
+
+    dedup: List[Tuple[str, str, str]] = []
+    seen = set()
+    for item in mentions:
+        key = (item[1], item[2])
+        if key in seen:
+            continue
+        dedup.append(item)
+        seen.add(key)
+    return dedup
+
+
+def extract_mentions_with_crf(corpus_rows: List[Dict[str, str]]) -> List[Mention]:
+    try:
+        import sklearn_crfsuite  # type: ignore[import-not-found]
+    except ImportError as exc:
+        raise RuntimeError(
+            "CRF mode requires sklearn-crfsuite. Install with: pip install sklearn-crfsuite"
+        ) from exc
+
+    sentence_rows: List[Tuple[str, str, int, str]] = []
     for row in corpus_rows:
+        doc_id = row.get("doc_id", "unknown_doc")
+        source = row.get("source", "unknown_source")
+        text = row.get("text", "")
+        for sid, sentence in enumerate(split_sentences(text), start=1):
+            sentence_rows.append((doc_id, source, sid, sentence))
+
+    x_train: List[List[Dict[str, str | bool]]] = []
+    y_train: List[List[str]] = []
+    tokenized_rows: List[List[Tuple[str, int, int]]] = []
+
+    for _, _, _, sentence in sentence_rows:
+        tokens_with_offsets = tokenize_with_offsets(sentence)
+        tokens = [t for t, _, _ in tokens_with_offsets]
+        if not tokens:
+            tokenized_rows.append([])
+            continue
+
+        weak_tags = weak_label_tokens(tokens)
+        if any(tag != "O" for tag in weak_tags):
+            x_train.append([sentence_to_token_features(tokens, i) for i in range(len(tokens))])
+            y_train.append(weak_tags)
+
+        tokenized_rows.append(tokens_with_offsets)
+
+    if not x_train:
+        raise RuntimeError(
+            "CRF training data is empty (no weak-labeled entities found). "
+            "Please enrich corpus pages or gazetteer entries before using --method crf."
+        )
+
+    crf = sklearn_crfsuite.CRF(
+        algorithm="lbfgs",
+        c1=0.1,
+        c2=0.1,
+        max_iterations=100,
+        all_possible_transitions=True,
+    )
+    crf.fit(x_train, y_train)
+
+    mentions: List[Mention] = []
+    for (doc_id, source, sid, sentence), tokens_with_offsets in zip(sentence_rows, tokenized_rows):
+        tokens = [t for t, _, _ in tokens_with_offsets]
+        if not tokens:
+            continue
+        features = [sentence_to_token_features(tokens, i) for i in range(len(tokens))]
+        predicted_tags = crf.predict_single(features)
+        for mention_text, canonical, label in decode_bio_mentions(sentence, tokens_with_offsets, predicted_tags):
+            confidence = "high" if mention_text in GAZETTEER.get(label, set()) else "medium"
+            mentions.append(
+                Mention(
+                    mention_text=mention_text,
+                    canonical_name=canonical,
+                    label=label,
+                    doc_id=doc_id,
+                    sentence_id=sid,
+                    context=sentence,
+                    source=source,
+                    evidence=sentence,
+                    confidence=confidence,
+                )
+            )
+
+    return mentions
+
+
+def extract_mentions_with_rule(rows: List[Dict[str, str]]) -> List[Mention]:
+    mentions: List[Mention] = []
+    for row in rows:
         doc_id = row.get("doc_id", "unknown_doc")
         source = row.get("source", "unknown_source")
         text = row.get("text", "")
@@ -129,6 +339,19 @@ def extract_mentions(corpus_rows: Iterable[Dict[str, str]]) -> List[Mention]:
                     )
                 )
     return mentions
+
+
+def extract_mentions(corpus_rows: Iterable[Dict[str, str]], method: str = "rule") -> List[Mention]:
+    rows = list(corpus_rows)
+    if method == "crf":
+        return extract_mentions_with_crf(rows)
+
+    if method == "rule":
+        return extract_mentions_with_rule(rows)
+
+    if method != "rule":
+        raise ValueError(f"Unsupported extraction method: {method}. Use 'rule' or 'crf'.")
+    return []
 
 
 def disambiguation_score(entity: Entity, mention: Mention) -> float:
@@ -219,6 +442,7 @@ def relation_candidates_for_sentence(
     sentence: str,
     mentions_in_sentence: List[Mention],
     mention_entity_map: Dict[Tuple[str, str, int], str],
+    extract_method: str,
 ) -> List[Dict[str, str]]:
     rows: List[Dict[str, str]] = []
     lowered = sentence.lower()
@@ -253,7 +477,7 @@ def relation_candidates_for_sentence(
                         "evidence": sentence,
                         "source": m_start.source,
                         "confidence": confidence,
-                        "extract_method": "rule",
+                        "extract_method": extract_method,
                         "disputed": "false",
                     }
                 )
@@ -264,6 +488,7 @@ def relation_candidates_for_sentence(
 def extract_relations(
     mentions: List[Mention],
     mention_entity_map: Dict[Tuple[str, str, int], str],
+    extract_method: str = "rule",
 ) -> List[Dict[str, str]]:
     grouped: Dict[Tuple[str, int], List[Mention]] = {}
     for mention in mentions:
@@ -272,7 +497,14 @@ def extract_relations(
     relations: List[Dict[str, str]] = []
     for (_, _), sentence_mentions in grouped.items():
         sentence = sentence_mentions[0].context
-        relations.extend(relation_candidates_for_sentence(sentence, sentence_mentions, mention_entity_map))
+        relations.extend(
+            relation_candidates_for_sentence(
+                sentence,
+                sentence_mentions,
+                mention_entity_map,
+                extract_method,
+            )
+        )
 
     dedup: Dict[Tuple[str, str, str], Dict[str, str]] = {}
     for row in relations:
@@ -299,7 +531,7 @@ def write_csv(path: Path, fieldnames: List[str], rows: List[Dict[str, str]]) -> 
             writer.writerow(row)
 
 
-def run_pipeline(repo_root: Path, raw_path: Path | None = None) -> None:
+def run_pipeline(repo_root: Path, raw_path: Path | None = None, extraction_method: str = "rule") -> None:
     if raw_path is None:
         default_raw = repo_root / "data" / "raw" / "turing_corpus.jsonl"
         fallback_raw = repo_root.parent / "data" / "raw" / "turing_corpus.jsonl"
@@ -316,11 +548,16 @@ def run_pipeline(repo_root: Path, raw_path: Path | None = None) -> None:
 
     intermediate_dir = repo_root / "data" / "intermediate"
     output_dir = repo_root / "data" / "output"
+    method_suffix = "" if extraction_method == "rule" else f"_{extraction_method}"
 
     corpus = load_corpus(raw_path)
-    mentions = extract_mentions(corpus)
+    mentions = extract_mentions(corpus, method=extraction_method)
     entities, mention_entity_map = resolve_entities(mentions)
-    relations = extract_relations(mentions, mention_entity_map)
+    relations = extract_relations(
+        mentions,
+        mention_entity_map,
+        extract_method=extraction_method,
+    )
 
     mention_rows = [
         {
@@ -354,7 +591,7 @@ def run_pipeline(repo_root: Path, raw_path: Path | None = None) -> None:
     edge_rows = [r for r in relations if r["confidence"] in {"medium", "high"}]
 
     write_csv(
-        intermediate_dir / "entity_mentions.csv",
+        intermediate_dir / f"entity_mentions{method_suffix}.csv",
         [
             "doc_id",
             "sentence_id",
@@ -370,7 +607,7 @@ def run_pipeline(repo_root: Path, raw_path: Path | None = None) -> None:
     )
 
     write_csv(
-        intermediate_dir / "entities_resolved.csv",
+        intermediate_dir / f"entities_resolved{method_suffix}.csv",
         [
             "entity_id",
             "name",
@@ -385,7 +622,7 @@ def run_pipeline(repo_root: Path, raw_path: Path | None = None) -> None:
     )
 
     write_csv(
-        intermediate_dir / "relation_candidates.csv",
+        intermediate_dir / f"relation_candidates{method_suffix}.csv",
         [
             "start_id",
             "end_id",
@@ -400,7 +637,7 @@ def run_pipeline(repo_root: Path, raw_path: Path | None = None) -> None:
     )
 
     write_csv(
-        output_dir / "nodes.csv",
+        output_dir / f"nodes{method_suffix}.csv",
         ["entity_id", "name", "label", "aliases", "source"],
         [
             {
@@ -415,7 +652,7 @@ def run_pipeline(repo_root: Path, raw_path: Path | None = None) -> None:
     )
 
     write_csv(
-        output_dir / "edges.csv",
+        output_dir / f"edges{method_suffix}.csv",
         ["start_id", "end_id", "relation", "evidence", "source", "confidence"],
         [
             {

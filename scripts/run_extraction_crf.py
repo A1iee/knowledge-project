@@ -1,6 +1,6 @@
 from pathlib import Path
-import sys
 import argparse
+import sys
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -12,7 +12,7 @@ from kg_extraction import run_pipeline
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Run KG extraction pipeline")
+    parser = argparse.ArgumentParser(description="Run KG extraction pipeline with CRF-based entity extraction")
     parser.add_argument(
         "--input",
         default="",
@@ -24,11 +24,12 @@ def parse_args() -> argparse.Namespace:
 def main() -> None:
     args = parse_args()
     raw_path = Path(args.input).resolve() if args.input else None
-    run_pipeline(REPO_ROOT, raw_path=raw_path)
+    run_pipeline(REPO_ROOT, raw_path=raw_path, extraction_method="crf")
     if raw_path:
-        print(f"Extraction pipeline finished. Input: {raw_path}")
+        print(f"CRF extraction pipeline finished. Input: {raw_path}")
     else:
-        print("Extraction pipeline finished. Input auto-detected.")
+        print("CRF extraction pipeline finished. Input auto-detected.")
+    print("Entity extraction method: crf")
     print("Outputs are in knowledge-project/data/intermediate and knowledge-project/data/output.")
 
 

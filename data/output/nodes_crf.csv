@@ -1,0 +1,18 @@
+entity_id,name,label,aliases,source
+Person:alan_mathison_turing,Alan Mathison Turing,Person,Alan Mathison Turing,wikipedia
+Theory:turing_machine,Turing machine,Theory,Turing machine,wikipedia
+Organization:king_s_college,King's College,Organization,King's College,wikipedia
+Organization:princeton_university,Princeton University,Organization,Princeton University,wikipedia
+Event:world_war_ii,World War II,Event,World War II,wikipedia
+Organization:bletchley_park,Bletchley Park,Organization,Bletchley Park,wikipedia
+Person:alan_turing,Alan Turing,Person,Alan Turing,wikipedia
+Person:alonzo_church,Alonzo Church,Person,Alonzo Church,wikipedia
+Work:on_computable_numbers,On Computable Numbers,Work,On Computable Numbers,wikipedia
+Person:john_von_neumann,John von Neumann,Person,John von Neumann,wikipedia
+Theory:turing_test,Turing test,Theory,Turing test,wikipedia
+Person:alan_mathison,Alan Mathison,Person,Alan Mathison,wikipedia
+Theory:turing_machine,Turing Machine,Theory,Turing Machine,wikipedia
+Person:alan_m_turing,Alan M Turing,Person,Alan M Turing,wikipedia
+Person:alan_m,Alan M,Person,Alan M,wikipedia
+Theory:turing_test,Turing Test,Theory,Turing Test,wikipedia
+Theory:church_turing_thesis,Church-Turing thesis,Theory,Church-Turing thesis,wikipedia

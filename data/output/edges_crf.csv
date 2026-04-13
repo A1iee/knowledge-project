@@ -1,0 +1,2 @@
+start_id,end_id,relation,evidence,source,confidence
+Person:alan_turing,Work:on_computable_numbers,PUBLISHED,"Turing's proof is a proof by Alan Turing, first published in November 1936 with the title ""On Computable Numbers, with an Application to the Entscheidungsproblem"".",wikipedia,high
