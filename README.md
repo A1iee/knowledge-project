@@ -1,4 +1,4 @@
-# Turing Schema Knowledge Graph Project
+# Turing Knowledge Graph Project
 
 这是一个用于构建基于图灵（Turing）的知识图谱全流程项目。本项目从维基百科等数据源采集语料，通过弱监督策略结合 BiLSTM-CRF 模型进行命名实体识别（NER），并利用规则进行属性与关系抽取，最后经过实体消歧、知识融合，将构建好的知识图谱导入到 Neo4j 图数据库中进行存储与查询。
 
