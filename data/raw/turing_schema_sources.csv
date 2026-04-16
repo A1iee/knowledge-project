@@ -1,0 +1,208 @@
+seed_label,seed_title,requested_title,final_title,url,status,paragraph_count
+Person,Alan Turing,Alan Turing,Alan Turing,https://en.wikipedia.org/wiki/Alan_Turing,ok,129
+Person,Joan Clarke,Joan Clarke,Joan Clarke,https://en.wikipedia.org/wiki/Joan_Clarke,ok,31
+Person,Alonzo Church,Alonzo Church,Alonzo Church,https://en.wikipedia.org/wiki/Alonzo_Church,ok,36
+Person,John von Neumann,John von Neumann,John von Neumann,https://en.wikipedia.org/wiki/John_von_Neumann,ok,164
+Person,Claude Shannon,Claude Shannon,Claude Shannon,https://en.wikipedia.org/wiki/Claude_Shannon,ok,81
+Person,Max Newman,Max Newman,Max Newman,https://en.wikipedia.org/wiki/Max_Newman,ok,29
+Person,Donald Michie,Donald Michie,Donald Michie,https://en.wikipedia.org/wiki/Donald_Michie,ok,11
+Person,I. J. Good,I. J. Good,I. J. Good,https://en.wikipedia.org/wiki/I._J._Good,ok,32
+Person,Gordon Welchman,Gordon Welchman,Gordon Welchman,https://en.wikipedia.org/wiki/Gordon_Welchman,ok,36
+Person,Hugh Alexander,Hugh Alexander,Hugh E. Alexander,https://en.wikipedia.org/wiki/Hugh_E._Alexander,disambiguation_fallback,5
+Person,Robin Gandy,Robin Gandy,Robin Gandy,https://en.wikipedia.org/wiki/Robin_Gandy,ok,6
+Organization,"King's College, Cambridge","King's College, Cambridge","King's College, Cambridge","https://en.wikipedia.org/wiki/King%27s_College,_Cambridge",ok,64
+Organization,University of Cambridge,University of Cambridge,University of Cambridge,https://en.wikipedia.org/wiki/University_of_Cambridge,ok,187
+Organization,Princeton University,Princeton University,Princeton University,https://en.wikipedia.org/wiki/Princeton_University,ok,107
+Organization,Bletchley Park,Bletchley Park,Bletchley Park,https://en.wikipedia.org/wiki/Bletchley_Park,ok,108
+Organization,University of Manchester,University of Manchester,University of Manchester,https://en.wikipedia.org/wiki/University_of_Manchester,ok,86
+Organization,Government Code and Cypher School,Government Code and Cypher School,Government Code and Cypher School,https://en.wikipedia.org/wiki/Government_Code_and_Cypher_School,ok,11
+Organization,National Physical Laboratory (United Kingdom),National Physical Laboratory (United Kingdom),National Physical Laboratory (United Kingdom),https://en.wikipedia.org/wiki/National_Physical_Laboratory_(United_Kingdom),ok,33
+Organization,Hut 8,Hut 8,Hut 8,https://en.wikipedia.org/wiki/Hut_8,ok,7
+Organization,Bell Labs,Bell Labs,Bell Labs,https://en.wikipedia.org/wiki/Bell_Labs,ok,218
+Organization,Foreign Office,Foreign Office,"Foreign, Commonwealth and Development Office","https://en.wikipedia.org/wiki/Foreign,_Commonwealth_and_Development_Office",ok,75
+Location,London,London,London,https://en.wikipedia.org/wiki/London,ok,111
+Location,Manchester,Manchester,Manchester,https://en.wikipedia.org/wiki/Manchester,ok,90
+Location,"Princeton, New Jersey","Princeton, New Jersey","Princeton, New Jersey","https://en.wikipedia.org/wiki/Princeton,_New_Jersey",ok,84
+Location,Maida Vale,Maida Vale,Maida Vale,https://en.wikipedia.org/wiki/Maida_Vale,ok,52
+Location,Wilmslow,Wilmslow,Wilmslow,https://en.wikipedia.org/wiki/Wilmslow,ok,73
+Location,Bletchley,Bletchley,Bletchley,https://en.wikipedia.org/wiki/Bletchley,ok,34
+Location,Cambridge,Cambridge,Cambridge,https://en.wikipedia.org/wiki/Cambridge,ok,116
+Location,Sherborne School,Sherborne School,Sherborne School,https://en.wikipedia.org/wiki/Sherborne_School,ok,64
+Concept,Turing machine,Turing machine,Turing machine,https://en.wikipedia.org/wiki/Turing_machine,ok,128
+Concept,Turing test,Turing test,Turing test,https://en.wikipedia.org/wiki/Turing_test,ok,119
+Concept,Halting problem,Halting problem,Halting problem,https://en.wikipedia.org/wiki/Halting_problem,ok,133
+Concept,Church-Turing thesis,Church-Turing thesis,Church–Turing thesis,https://en.wikipedia.org/wiki/Church%E2%80%93Turing_thesis,ok,72
+Concept,Computability theory,Computability theory,Computability theory,https://en.wikipedia.org/wiki/Computability_theory,ok,68
+Concept,Morphogenesis,Morphogenesis,Morphogenesis,https://en.wikipedia.org/wiki/Morphogenesis,ok,21
+Concept,Universal Turing machine,Universal Turing machine,Universal Turing machine,https://en.wikipedia.org/wiki/Universal_Turing_machine,ok,32
+Concept,Decision problem,Decision problem,Decision problem,https://en.wikipedia.org/wiki/Decision_problem,ok,25
+Concept,Oracle machine,Oracle machine,Oracle machine,https://en.wikipedia.org/wiki/Oracle_machine,ok,29
+Concept,Turing reduction,Turing reduction,Turing reduction,https://en.wikipedia.org/wiki/Turing_reduction,ok,30
+Artifact,Bombe,Bombe,Bombe,https://en.wikipedia.org/wiki/Bombe,ok,73
+Artifact,Automatic Computing Engine,Automatic Computing Engine,Automatic Computing Engine,https://en.wikipedia.org/wiki/Automatic_Computing_Engine,ok,19
+Artifact,Enigma machine,Enigma machine,Enigma machine,https://en.wikipedia.org/wiki/Enigma_machine,ok,126
+Artifact,Manchester Baby,Manchester Baby,Manchester Baby,https://en.wikipedia.org/wiki/Manchester_Baby,ok,39
+Artifact,Colossus computer,Colossus computer,Colossus computer,https://en.wikipedia.org/wiki/Colossus_computer,ok,68
+Artifact,Pilot ACE,Pilot ACE,Pilot ACE,https://en.wikipedia.org/wiki/Pilot_ACE,ok,18
+Event,World War II,World War II,World War II,https://en.wikipedia.org/wiki/World_War_II,ok,130
+Event,Cryptanalysis of the Enigma,Cryptanalysis of the Enigma,Cryptanalysis of the Enigma,https://en.wikipedia.org/wiki/Cryptanalysis_of_the_Enigma,ok,184
+Event,Alan Turing law,Alan Turing law,Alan Turing law,https://en.wikipedia.org/wiki/Alan_Turing_law,ok,14
+Event,Royal pardon,Royal pardon,Royal prerogative of mercy,https://en.wikipedia.org/wiki/Royal_prerogative_of_mercy,ok,25
+Event,Turing centenary,Turing centenary,Turing centenary,,page_not_found,0
+Event,Prosecution of Alan Turing,Prosecution of Alan Turing,Prosecution of Alan Turing,,page_not_found,0
+Event,Second Boer War,Second Boer War,Second Boer War,https://en.wikipedia.org/wiki/Second_Boer_War,ok,163
+Publication,On Computable Numbers,On Computable Numbers,Turing's proof,https://en.wikipedia.org/wiki/Turing%27s_proof,ok,130
+Publication,Computing Machinery and Intelligence,Computing Machinery and Intelligence,Computing Machinery and Intelligence,https://en.wikipedia.org/wiki/Computing_Machinery_and_Intelligence,ok,52
+Publication,Systems of Logic Based on Ordinals,Systems of Logic Based on Ordinals,Systems of Logic Based on Ordinals,https://en.wikipedia.org/wiki/Systems_of_Logic_Based_on_Ordinals,ok,11
+Publication,The Chemical Basis of Morphogenesis,The Chemical Basis of Morphogenesis,The Chemical Basis of Morphogenesis,https://en.wikipedia.org/wiki/The_Chemical_Basis_of_Morphogenesis,ok,3
+Publication,Intelligent Machinery,Intelligent Machinery,Intelligent Machinery,,page_not_found,0
+Publication,Can Digital Computers Think?,Can Digital Computers Think?,Can Digital Computers Think?,,page_not_found,0
+Publication,The Applications of Probability to Cryptography,The Applications of Probability to Cryptography,The Applications of Probability to Cryptography,,page_not_found,0
+Honor,Turing Award,Turing Award,Turing Award,https://en.wikipedia.org/wiki/Turing_Award,ok,4
+Honor,Order of the British Empire,Order of the British Empire,Order of the British Empire,https://en.wikipedia.org/wiki/Order_of_the_British_Empire,ok,74
+Honor,Bank of England 50 note,Bank of England 50 note,Bank of England 50 note,,page_not_found,0
+Honor,Alan Turing Year,Alan Turing Year,Alan Turing Year,https://en.wikipedia.org/wiki/Alan_Turing_Year,ok,19
+Person,Alan Turing,1926 United Kingdom general strike,1926 United Kingdom general strike,https://en.wikipedia.org/wiki/1926_United_Kingdom_general_strike,ok,85
+Person,Alan Turing,A. P. Mahon,Cyril Patrick Mahon,https://en.wikipedia.org/wiki/Cyril_Patrick_Mahon,ok,5
+Person,Alan Turing,AI Futures Project,AI Futures Project,https://en.wikipedia.org/wiki/AI_Futures_Project,ok,10
+Person,Alan Turing,AI alignment,AI alignment,https://en.wikipedia.org/wiki/AI_alignment,ok,72
+Person,Alan Turing,AI boom,AI boom,https://en.wikipedia.org/wiki/AI_boom,ok,51
+Person,Alan Turing,AI capability control,AI capability control,https://en.wikipedia.org/wiki/AI_capability_control,ok,17
+Person,Alan Turing,AI safety,AI safety,https://en.wikipedia.org/wiki/AI_safety,ok,59
+Person,Alan Turing,AI takeover,AI takeover,https://en.wikipedia.org/wiki/AI_takeover,ok,37
+Person,Alan Turing,Abraham Wald,Abraham Wald,https://en.wikipedia.org/wiki/Abraham_Wald,ok,18
+Person,Alan Turing,Abram Besicovitch,Abram Besicovitch,https://en.wikipedia.org/wiki/Abram_Besicovitch,ok,9
+Person,Alan Turing,Action This Day (memo),Action This Day (memo),https://en.wikipedia.org/wiki/Action_This_Day_(memo),ok,32
+Person,Alan Turing,Ada Lovelace,Ada Lovelace,https://en.wikipedia.org/wiki/Ada_Lovelace,ok,104
+Person,Alan Turing,Adam Mickiewicz University in Poznań,Adam Mickiewicz University in Poznań,https://en.wikipedia.org/wiki/Adam_Mickiewicz_University_in_Pozna%C5%84,ok,36
+Person,Alan Turing,Adele Goldstine,Adele Goldstine,https://en.wikipedia.org/wiki/Adele_Goldstine,ok,9
+Person,Alan Turing,Adjusted for inflation,Real and nominal value,https://en.wikipedia.org/wiki/Real_and_nominal_value,ok,21
+Person,Alan Turing,Alan Kay,Alan Kay,https://en.wikipedia.org/wiki/Alan_Kay,ok,34
+Person,Alan Turing,Alan Turing: The Enigma,Alan Turing: The Enigma,https://en.wikipedia.org/wiki/Alan_Turing:_The_Enigma,ok,4
+Person,Alan Turing,Albert Einstein,Albert Einstein,https://en.wikipedia.org/wiki/Albert_Einstein,ok,157
+Person,Alan Turing,Albert Neuberger,Albert Neuberger,https://en.wikipedia.org/wiki/Albert_Neuberger,ok,5
+Person,Alan Turing,Alfred D. Chandler Jr.,Alfred D. Chandler Jr.,https://en.wikipedia.org/wiki/Alfred_D._Chandler_Jr.,ok,58
+Person,Alan Turing,Alfred Ubbelohde,Alfred Ubbelohde,https://en.wikipedia.org/wiki/Alfred_Ubbelohde,ok,27
+Person,Alan Turing,Algorithm,Algorithm,https://en.wikipedia.org/wiki/Algorithm,ok,59
+Person,Alan Turing,Alick Glennie,Alick Glennie,https://en.wikipedia.org/wiki/Alick_Glennie,ok,4
+Person,Alan Turing,Alignment Research Center,Alignment Research Center,https://en.wikipedia.org/wiki/Alignment_Research_Center,ok,5
+Person,Alan Turing,Allies of World War 2,Allies of World War II,https://en.wikipedia.org/wiki/Allies_of_World_War_II,ok,169
+Person,Alan Turing,American Journal of Mathematics,American Journal of Mathematics,https://en.wikipedia.org/wiki/American_Journal_of_Mathematics,ok,6
+Person,Alan Turing,American Physical Society,American Physical Society,https://en.wikipedia.org/wiki/American_Physical_Society,ok,38
+Person,Joan Clarke,87th Academy Awards,87th Academy Awards,https://en.wikipedia.org/wiki/87th_Academy_Awards,ok,35
+Person,Joan Clarke,ARA Santa Fe (S-21),ARA Santa Fe (S-21),https://en.wikipedia.org/wiki/ARA_Santa_Fe_(S-21),ok,16
+Person,Joan Clarke,Academy Award for Best Supporting Actress,Academy Award for Best Supporting Actress,https://en.wikipedia.org/wiki/Academy_Award_for_Best_Supporting_Actress,ok,18
+Person,Joan Clarke,Amanda Root,Amanda Root,https://en.wikipedia.org/wiki/Amanda_Root,ok,29
+Person,Joan Clarke,Andrew Hodges,Andrew Hodges,https://en.wikipedia.org/wiki/Andrew_Hodges,ok,7
+Person,Joan Clarke,Archive.org,Internet Archive,https://en.wikipedia.org/wiki/Internet_Archive,ok,104
+Person,Joan Clarke,Authenticated encryption,Authenticated encryption,https://en.wikipedia.org/wiki/Authenticated_encryption,ok,32
+Person,Joan Clarke,Authentication protocol,Authentication protocol,https://en.wikipedia.org/wiki/Authentication_protocol,ok,18
+Person,Joan Clarke,BBC News,BBC News,https://en.wikipedia.org/wiki/BBC_News,ok,104
+Person,Joan Clarke,Banburismus,Banburismus,https://en.wikipedia.org/wiki/Banburismus,ok,50
+Person,Joan Clarke,Benedict Cumberbatch,Benedict Cumberbatch,https://en.wikipedia.org/wiki/Benedict_Cumberbatch,ok,68
+Person,Joan Clarke,Bishop of Chichester,Bishop of Chichester,https://en.wikipedia.org/wiki/Bishop_of_Chichester,ok,8
+Person,Joan Clarke,Block cipher,Block cipher,https://en.wikipedia.org/wiki/Block_cipher,ok,86
+Person,Joan Clarke,Blue plaque,Blue plaque,https://en.wikipedia.org/wiki/Blue_plaque,ok,46
+Person,Joan Clarke,Breaking the Code (film),Breaking the Code (film),https://en.wikipedia.org/wiki/Breaking_the_Code_(film),ok,5
+Person,Joan Clarke,British Numismatic Society,British Numismatic Society,https://en.wikipedia.org/wiki/British_Numismatic_Society,ok,4
+Person,Joan Clarke,Canon (priest),Canon (title),https://en.wikipedia.org/wiki/Canon_(title),ok,27
+Person,Joan Clarke,Chichester Cathedral,Chichester Cathedral,https://en.wikipedia.org/wiki/Chichester_Cathedral,ok,44
+Person,Joan Clarke,Ciphertext,Ciphertext,https://en.wikipedia.org/wiki/Ciphertext,ok,27
+Person,Joan Clarke,Classical cipher,Classical cipher,https://en.wikipedia.org/wiki/Classical_cipher,ok,29
+Person,Joan Clarke,Clergyman,Clergy,https://en.wikipedia.org/wiki/Clergy,ok,100
+Person,Joan Clarke,Codetext,Code (cryptography),https://en.wikipedia.org/wiki/Code_(cryptography),ok,38
+Person,Joan Clarke,Conel Hugh O'Donel Alexander,Conel Hugh O'Donel Alexander,https://en.wikipedia.org/wiki/Conel_Hugh_O%27Donel_Alexander,ok,24
+Person,Joan Clarke,Crail,Crail,https://en.wikipedia.org/wiki/Crail,ok,20
+Person,Joan Clarke,Cryptanalysis,Cryptanalysis,https://en.wikipedia.org/wiki/Cryptanalysis,ok,75
+Person,Alonzo Church,A. C. Croom,A. C. Croom,https://en.wikipedia.org/wiki/A._C._Croom,ok,2
+Person,Alonzo Church,A. J. Ayer,A. J. Ayer,https://en.wikipedia.org/wiki/A._J._Ayer,ok,54
+Person,Alonzo Church,ACM SIGLOG,ACM SIGLOG,https://en.wikipedia.org/wiki/ACM_SIGLOG,ok,13
+Person,Alonzo Church,Actualism,Actualism,https://en.wikipedia.org/wiki/Actualism,ok,27
+Person,Alonzo Church,Adolf Grünbaum,Adolf Grünbaum,https://en.wikipedia.org/wiki/Adolf_Gr%C3%BCnbaum,ok,23
+Person,Alonzo Church,Alasdair MacIntyre,Alasdair MacIntyre,https://en.wikipedia.org/wiki/Alasdair_MacIntyre,ok,74
+Person,Alonzo Church,Alexander Pruss,Alexander Pruss,https://en.wikipedia.org/wiki/Alexander_Pruss,ok,12
+Person,Alonzo Church,Alfred Foster (mathematician),Alfred Foster (mathematician),https://en.wikipedia.org/wiki/Alfred_Foster_(mathematician),ok,11
+Person,Alonzo Church,Alfred North Whitehead,Alfred North Whitehead,https://en.wikipedia.org/wiki/Alfred_North_Whitehead,ok,172
+Person,Alonzo Church,Alfred Tarski,Alfred Tarski,https://en.wikipedia.org/wiki/Alfred_Tarski,ok,103
+Person,Alonzo Church,Algorithmically random sequence,Algorithmically random sequence,https://en.wikipedia.org/wiki/Algorithmically_random_sequence,ok,79
+Person,Alonzo Church,Alice Crary,Alice Crary,https://en.wikipedia.org/wiki/Alice_Crary,ok,22
+Person,Alonzo Church,Alonzo Church (college president),Alonzo Church (college president),https://en.wikipedia.org/wiki/Alonzo_Church_(college_president),ok,15
+Person,Alonzo Church,Alvin Plantinga,Alvin Plantinga,https://en.wikipedia.org/wiki/Alvin_Plantinga,ok,71
+Person,Alonzo Church,American Academy of Arts and Sciences,American Academy of Arts and Sciences,https://en.wikipedia.org/wiki/American_Academy_of_Arts_and_Sciences,ok,13
+Person,Alonzo Church,Analytic philosophy,Analytic philosophy,https://en.wikipedia.org/wiki/Analytic_philosophy,ok,433
+Person,Alonzo Church,Analytic theology,Analytic theology,https://en.wikipedia.org/wiki/Analytic_theology,ok,19
+Person,Alonzo Church,Analytical Marxism,Analytical Marxism,https://en.wikipedia.org/wiki/Analytical_Marxism,ok,25
+Person,Alonzo Church,Analytical Thomism,Analytical Thomism,https://en.wikipedia.org/wiki/Analytical_Thomism,ok,7
+Person,Alonzo Church,Analytical feminism,Analytical feminism,https://en.wikipedia.org/wiki/Analytical_feminism,ok,11
+Person,Alonzo Church,Analytic–synthetic distinction,Analytic–synthetic distinction,https://en.wikipedia.org/wiki/Analytic%E2%80%93synthetic_distinction,ok,70
+Person,Alonzo Church,Anti-realism,Anti-realism,https://en.wikipedia.org/wiki/Anti-realism,ok,30
+Person,Alonzo Church,Antony Flew,Antony Flew,https://en.wikipedia.org/wiki/Antony_Flew,ok,61
+Person,Alonzo Church,Australian realism,Australian realism,https://en.wikipedia.org/wiki/Australian_realism,ok,9
+Person,Alonzo Church,Bachelor of Science,Bachelor of Science,https://en.wikipedia.org/wiki/Bachelor_of_Science,ok,36
+Person,Alonzo Church,Barry Stroud,Barry Stroud,https://en.wikipedia.org/wiki/Barry_Stroud,ok,35
+Person,Alonzo Church,Bas van Fraassen,Bas van Fraassen,https://en.wikipedia.org/wiki/Bas_van_Fraassen,ok,18
+Person,Alonzo Church,Berlin Circle,Berlin Circle,https://en.wikipedia.org/wiki/Berlin_Circle,ok,4
+Person,John von Neumann,*-algebra,*-algebra,https://en.wikipedia.org/wiki/*-algebra,ok,32
+Person,John von Neumann,22824 von Neumann,List of minor planets: 22001–23000,https://en.wikipedia.org/wiki/List_of_minor_planets:_22001%E2%80%9323000,ok,3
+Person,John von Neumann,509th Composite Group,509th Composite Group,https://en.wikipedia.org/wiki/509th_Composite_Group,ok,62
+Person,John von Neumann,557th Weather Wing,557th Weather Wing,https://en.wikipedia.org/wiki/557th_Weather_Wing,ok,58
+Person,John von Neumann,AVIDAC,AVIDAC,https://en.wikipedia.org/wiki/AVIDAC,ok,4
+Person,John von Neumann,AW*-algebra,AW*-algebra,https://en.wikipedia.org/wiki/AW*-algebra,ok,8
+Person,John von Neumann,A Tale of Two Cities,A Tale of Two Cities,https://en.wikipedia.org/wiki/A_Tale_of_Two_Cities,ok,108
+Person,John von Neumann,A fortiori argument,Argumentum a fortiori,https://en.wikipedia.org/wiki/Argumentum_a_fortiori,ok,23
+Person,John von Neumann,Aage Bohr,Aage Bohr,https://en.wikipedia.org/wiki/Aage_Bohr,ok,21
+Person,John von Neumann,Abraham Adrian Albert,A. A. Albert,https://en.wikipedia.org/wiki/A._A._Albert,ok,29
+Person,John von Neumann,Abraham Fraenkel,Abraham Fraenkel,https://en.wikipedia.org/wiki/Abraham_Fraenkel,ok,45
+Person,John von Neumann,Abraham H. Taub,Abraham H. Taub,https://en.wikipedia.org/wiki/Abraham_H._Taub,ok,11
+Person,John von Neumann,Abraham Pais,Abraham Pais,https://en.wikipedia.org/wiki/Abraham_Pais,ok,31
+Person,John von Neumann,Absorbed dose,Absorbed dose,https://en.wikipedia.org/wiki/Absorbed_dose,ok,23
+Person,John von Neumann,Academic tenure,Academic tenure,https://en.wikipedia.org/wiki/Academic_tenure,ok,26
+Person,John von Neumann,Affine transformation,Affine transformation,https://en.wikipedia.org/wiki/Affine_transformation,ok,75
+Person,John von Neumann,African-American scientists and technicians on the Manhattan Project,African-American scientists and technicians on the Manhattan Project,https://en.wikipedia.org/wiki/African-American_scientists_and_technicians_on_the_Manhattan_Project,ok,60
+Person,John von Neumann,Alamogordo Bombing Range,White Sands Missile Range,https://en.wikipedia.org/wiki/White_Sands_Missile_Range,ok,71
+Person,John von Neumann,Albedo,Albedo,https://en.wikipedia.org/wiki/Albedo,ok,60
+Person,John von Neumann,Albert W. Tucker,Albert W. Tucker,https://en.wikipedia.org/wiki/Albert_W._Tucker,ok,19
+Person,John von Neumann,Albert algebra,Albert algebra,https://en.wikipedia.org/wiki/Albert_algebra,ok,15
+Person,John von Neumann,Alexander Grothendieck,Alexander Grothendieck,https://en.wikipedia.org/wiki/Alexander_Grothendieck,ok,82
+Person,John von Neumann,Alexandra Bellow,Alexandra Bellow,https://en.wikipedia.org/wiki/Alexandra_Bellow,ok,26
+Person,John von Neumann,Alfréd Haar,Alfréd Haar,https://en.wikipedia.org/wiki/Alfr%C3%A9d_Haar,ok,9
+Person,Claude Shannon,A. Paul Alivisatos,Paul Alivisatos,https://en.wikipedia.org/wiki/Paul_Alivisatos,ok,32
+Person,Claude Shannon,AT&T Corporation,AT&T Corporation,https://en.wikipedia.org/wiki/AT%26T_Corporation,ok,50
+Person,Claude Shannon,AT&T Fellow,AT&T Fellow,,page_not_found,0
+Person,Claude Shannon,AT&T Laboratories,AT&T Labs,https://en.wikipedia.org/wiki/AT%26T_Labs,ok,10
+Person,Claude Shannon,A Mathematical Theory of Communication,A Mathematical Theory of Communication,https://en.wikipedia.org/wiki/A_Mathematical_Theory_of_Communication,ok,11
+Person,Claude Shannon,A Mind at Play,A Mind at Play,https://en.wikipedia.org/wiki/A_Mind_at_Play,ok,7
+Person,Claude Shannon,A Symbolic Analysis of Relay and Switching Circuits,A Symbolic Analysis of Relay and Switching Circuits,https://en.wikipedia.org/wiki/A_Symbolic_Analysis_of_Relay_and_Switching_Circuits,ok,5
+Person,Claude Shannon,Aaron D. Wyner,Aaron D. Wyner,https://en.wikipedia.org/wiki/Aaron_D._Wyner,ok,5
+Person,Claude Shannon,Abbas El Gamal,Abbas El Gamal,https://en.wikipedia.org/wiki/Abbas_El_Gamal,ok,16
+Person,Claude Shannon,Abel Wolman,Abel Wolman,https://en.wikipedia.org/wiki/Abel_Wolman,ok,14
+Person,Claude Shannon,Academy of Achievement,American Academy of Achievement,https://en.wikipedia.org/wiki/American_Academy_of_Achievement,ok,13
+Person,Claude Shannon,Advanced Encryption Standard,Advanced Encryption Standard,https://en.wikipedia.org/wiki/Advanced_Encryption_Standard,ok,68
+Person,Claude Shannon,Akira Nakashima,Akira Nakashima,https://en.wikipedia.org/wiki/Akira_Nakashima,ok,3
+Person,Claude Shannon,Albert Bandura,Albert Bandura,https://en.wikipedia.org/wiki/Albert_Bandura,ok,54
+Person,Claude Shannon,Albert Overhauser,Albert Overhauser,https://en.wikipedia.org/wiki/Albert_Overhauser,ok,5
+Person,Claude Shannon,Albert Sabin,Albert Sabin,https://en.wikipedia.org/wiki/Albert_Sabin,ok,43
+Person,Claude Shannon,Albert W. Hull,Albert W. Hull,https://en.wikipedia.org/wiki/Albert_W._Hull,ok,10
+Person,Claude Shannon,Alberto Calderón,Alberto Calderón,https://en.wikipedia.org/wiki/Alberto_Calder%C3%B3n,ok,25
+Person,Claude Shannon,Alexander Holevo,Alexander Holevo,https://en.wikipedia.org/wiki/Alexander_Holevo,ok,9
+Person,Claude Shannon,Alexander Rich,Alexander Rich,https://en.wikipedia.org/wiki/Alexander_Rich,ok,20
+Person,Claude Shannon,Alexandre Chorin,Alexandre Chorin,https://en.wikipedia.org/wiki/Alexandre_Chorin,ok,15
+Person,Claude Shannon,Alfred Noble Prize,Alfred Noble Prize,https://en.wikipedia.org/wiki/Alfred_Noble_Prize,ok,3
+Person,Claude Shannon,Alfred Sturtevant,Alfred Sturtevant,https://en.wikipedia.org/wiki/Alfred_Sturtevant,ok,20
+Person,Claude Shannon,Alfred Y. Cho,Alfred Y. Cho,https://en.wikipedia.org/wiki/Alfred_Y._Cho,ok,9
+Person,Max Newman,A. G. Greenhill,Alfred George Greenhill,https://en.wikipedia.org/wiki/Alfred_George_Greenhill,ok,12
+Person,Max Newman,Alan Turing Building,Alan Turing Building,https://en.wikipedia.org/wiki/Alan_Turing_Building,ok,11
+Person,Max Newman,Albrecht Fröhlich,Albrecht Fröhlich,https://en.wikipedia.org/wiki/Albrecht_Fr%C3%B6hlich,ok,4
+Person,Max Newman,Alzheimer's disease,Alzheimer's disease,https://en.wikipedia.org/wiki/Alzheimer%27s_disease,ok,117
+Person,Max Newman,Andrew Wiles,Andrew Wiles,https://en.wikipedia.org/wiki/Andrew_Wiles,ok,29
+Person,Max Newman,Archbishop Holgate's School,Archbishop Holgate's School,https://en.wikipedia.org/wiki/Archbishop_Holgate%27s_School,ok,10
+Person,Max Newman,Arthur Cayley,Arthur Cayley,https://en.wikipedia.org/wiki/Arthur_Cayley,ok,34
+Person,Max Newman,Augustus Edward Hough Love,Augustus Edward Hough Love,https://en.wikipedia.org/wiki/Augustus_Edward_Hough_Love,ok,8
+Person,Max Newman,Belief,Belief,https://en.wikipedia.org/wiki/Belief,ok,92
+Person,Max Newman,Bertrand Russell,Bertrand Russell,https://en.wikipedia.org/wiki/Bertrand_Russell,ok,160
+Person,Max Newman,Biographical Memoirs of Fellows of the Royal Society,Biographical Memoirs of Fellows of the Royal Society,https://en.wikipedia.org/wiki/Biographical_Memoirs_of_Fellows_of_the_Royal_Society,ok,3
+Person,Max Newman,British undergraduate degree classification,British undergraduate degree classification,https://en.wikipedia.org/wiki/British_undergraduate_degree_classification,ok,52
+Person,Max Newman,Bryan John Birch,Bryan John Birch,https://en.wikipedia.org/wiki/Bryan_John_Birch,ok,8
+Person,Max Newman,Bydgoszcz,Bydgoszcz,https://en.wikipedia.org/wiki/Bydgoszcz,ok,75
+Person,Max Newman,Cambridge Mathematical Tripos,Mathematical Tripos,https://en.wikipedia.org/wiki/Mathematical_Tripos,ok,42
+Person,Max Newman,Catherine Caughey,Catherine Caughey,https://en.wikipedia.org/wiki/Catherine_Caughey,ok,9
