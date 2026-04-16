@@ -26,6 +26,13 @@ pip install -r requirements.txt
 通过给定的种子实体列表，从维基百科获取相关页面的摘要和正文语料。
 - **实现方法:** 使用 `wikipedia` 库调用维基百科 API，依据预定义的种子词条（如“艾伦·图灵”及相关机构、人物）抓取非结构化文本内容，建立项目底层事实语料库。
 - **启动指令:** `python scripts/scraper.py`
+- **参数调整:**
+    - `--max-pages`：控制总抓取页面数量上限。
+    - `--related-depth`：控制爬虫从主词条向外接连发散的下钻深度（对于百科类抓取，强烈建议降为 `1` 或 `2`，以防页面数量呈指数级爆炸）。
+    - `--max-related`：控制单个页面上最多提取的“相关页面”数量（建议降至 `5`~`10` 之间，防止某些内容丰富的图灵词条衍生出数百个次级抓取任务）。
+  - **推荐命令:**
+    - 快速验证，广泛覆盖各主要词条（防止偏题）：`python scripts/scraper.py --max-pages 300 --related-depth 1 --max-related 5`
+    - 平衡型抓取（覆盖主大类的同时适度发散）：`python scripts/scraper.py --max-pages 500 --related-depth 2 --max-related 5`
 - **输出文件:** 
   - `data/raw/turing_schema_corpus.jsonl` (原始语料)
   - `data/raw/turing_schema_sources.csv` (数据源记录)
@@ -35,9 +42,9 @@ pip install -r requirements.txt
 - **实现方法:** 结合了深度语义特征与概率图模型约束：
   - **BiLSTM (双向长短期记忆网络):** 负责捕获句子中字符级的前后置上下文语义，充分提取特征。
   - **CRF (条件随机场):** 在 BiLSTM 的输出基础上，加入序列标签的全局转移概率约束（例如限定 `I-PER` 之前必须是 `B-PER` 或 `I-PER`），以确保提取出的实体边界合法且全局最优。
-- **数据准备 (标注):** `python scripts/train_ner_bilstm_crf.py --mode prepare`
+- **数据准备 (标注):** `python scripts/train_ner_bilstm_crf.py prepare`
   - **中间输出:** `data/intermediate/ner_char_bio.jsonl`
-- **模型训练:** `python scripts/train_ner_bilstm_crf.py --mode train`
+- **模型训练:** `python scripts/train_ner_bilstm_crf.py train`
   - **模型输出:** `data/output/ner_bilstm_crf/` (包含词汇表 `char_vocab.json`, `tag_vocab.json` 以及模型权重 `model.pt`)
 
 ### 3. 属性抽取
@@ -76,8 +83,8 @@ pip install -r requirements.txt
 ### 7. 知识存储 (Neo4j)
 将最终融合的主控节点和边数据导入 Neo4j 图数据库。执行前请确保本地或远程 Neo4j 数据库已启动，并在脚本中配置对应的连接信息。
 - **实现方法:** 利用 Neo4j 的官方 Python 驱动程序及 Cypher 图查询语言，设置各实体节点 ID 的唯一约束并执行批量插入与边建立操作，以支持随后复杂网络关系的快速图遍历计算。
-- **启动指令:** `python scripts/import_to_neo4j.py`
-- **输出目标:** Neo4j Database
+- **启动指令:** `python scripts/import_to_neo4j.py --uri "bolt://localhost:7687" --user "neo4j" --password "your Neo4j password"`
+- **输出结果:** 目标 Neo4j 图数据库系统（完成所有实体节点与关系边的实例化及持久化存储）
 
 ## 项目结构
 

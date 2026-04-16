@@ -1,152 +1,149 @@
 entity_uid,attribute_name,attribute_value,fused_sources,evidence_count
-Person:alan_turing_ce,occupation,mathematician,https://en.wikipedia.org/wiki/Alan_Turing,13
-Person:alan_turing_ce,occupation,computer scientist,https://en.wikipedia.org/wiki/Alan_Turing,13
-Person:alan_turing_ce,occupation,logician,https://en.wikipedia.org/wiki/Alan_Turing,13
-Person:alan_turing_ce,occupation,cryptanalyst,https://en.wikipedia.org/wiki/Alan_Turing,13
-Person:alan_turing_ce,occupation,philosopher,https://en.wikipedia.org/wiki/Alan_Turing,13
-Person:alan_turing_ce,occupation,theoretical biologist,https://en.wikipedia.org/wiki/Alan_Turing,13
-Person:alan_turing_ce,occupation,engineer,https://en.wikipedia.org/wiki/Alan_Turing,13
-Person:alan_turing_ce,occupation,codebreaker,https://en.wikipedia.org/wiki/Alan_Turing,13
-Person:alan_turing_ce,occupation,programmer,https://en.wikipedia.org/wiki/Alan_Turing,13
-Person:alan_turing_ce,occupation,physicist,https://en.wikipedia.org/wiki/Alan_Turing,13
-Person:alan_turing_ce,occupation,professor,https://en.wikipedia.org/wiki/Alan_Turing_Year,13
-Person:alan_turing_ce,occupation,researcher,https://en.wikipedia.org/wiki/AI_Futures_Project,13
-Person:alan_turing_ce,occupation,author,https://en.wikipedia.org/wiki/AI_takeover,13
-Person:alan_turing_ce,nationality,English,https://en.wikipedia.org/wiki/Alan_Turing,9
-Person:alan_turing_ce,nationality,German,https://en.wikipedia.org/wiki/Alan_Turing,9
-Person:alan_turing_ce,nationality,British,https://en.wikipedia.org/wiki/Alan_Turing,9
-Person:alan_turing_ce,nationality,Hungarian,https://en.wikipedia.org/wiki/Abraham_Wald,9
-Person:alan_turing_ce,nationality,American,https://en.wikipedia.org/wiki/Abraham_Wald,9
-Person:alan_turing_ce,nationality,Russian,https://en.wikipedia.org/wiki/Abram_Besicovitch,9
-Person:alan_turing_ce,nationality,Italian,https://en.wikipedia.org/wiki/Ada_Lovelace,9
-Person:alan_turing_ce,nationality,Polish,https://en.wikipedia.org/wiki/Adam_Mickiewicz_University_in_Pozna%C5%84,9
-Person:alan_turing_ce,nationality,Austrian,https://en.wikipedia.org/wiki/Albert_Einstein,9
-Person:alan_turing_ce,birth_date,1880,https://en.wikipedia.org/wiki/1926_United_Kingdom_general_strike,22
-Person:alan_turing_ce,death_date,1931,https://en.wikipedia.org/wiki/1926_United_Kingdom_general_strike,21
-Person:alan_turing_ce,aliases,Ada Lovelace,https://en.wikipedia.org/wiki/Ada_Lovelace,3
-Person:alan_turing_ce,aliases,a subject to the Kingdom of W,https://en.wikipedia.org/wiki/Albert_Einstein,3
-Person:alan_turing_ce,aliases,transform and conquer,https://en.wikipedia.org/wiki/Algorithm,3
-Organization:bletchley_park,org_type,park,https://en.wikipedia.org/wiki/Alan_Turing,1
+Person:alan_turing,occupation,mathematician,https://en.wikipedia.org/wiki/Alan_Turing,12
+Person:alan_turing,occupation,computer scientist,https://en.wikipedia.org/wiki/Alan_Turing,12
+Person:alan_turing,occupation,logician,https://en.wikipedia.org/wiki/Alan_Turing,12
+Person:alan_turing,occupation,cryptanalyst,https://en.wikipedia.org/wiki/Alan_Turing,12
+Person:alan_turing,occupation,philosopher,https://en.wikipedia.org/wiki/Alan_Turing,12
+Person:alan_turing,occupation,theoretical biologist,https://en.wikipedia.org/wiki/Alan_Turing,12
+Person:alan_turing,occupation,engineer,https://en.wikipedia.org/wiki/Alan_Turing,12
+Person:alan_turing,occupation,codebreaker,https://en.wikipedia.org/wiki/Alan_Turing,12
+Person:alan_turing,occupation,programmer,https://en.wikipedia.org/wiki/Alan_Turing,12
+Person:alan_turing,occupation,physicist,https://en.wikipedia.org/wiki/Alan_Turing,12
+Person:alan_turing,occupation,professor,https://en.wikipedia.org/wiki/Alan_Turing_Year,12
+Person:alan_turing,occupation,researcher,https://en.wikipedia.org/wiki/AI_Futures_Project,12
+Person:alan_turing,nationality,English,https://en.wikipedia.org/wiki/Alan_Turing,3
+Person:alan_turing,nationality,German,https://en.wikipedia.org/wiki/Alan_Turing,3
+Person:alan_turing,nationality,British,https://en.wikipedia.org/wiki/Alan_Turing,3
+Person:alan_turing,birth_date,1912,https://en.wikipedia.org/wiki/Maida_Vale,2
+Person:alan_turing,death_date,1954,https://en.wikipedia.org/wiki/Maida_Vale,2
+Organization:government_code_and_cypher_school_at,org_type,school,https://en.wikipedia.org/wiki/Alan_Turing,1
+Organization:bletchley_park_park,org_type,park,https://en.wikipedia.org/wiki/Alan_Turing,1
 Organization:manchester_university,org_type,university,https://en.wikipedia.org/wiki/Alan_Turing,1
 Organization:manchester_university,established_year,1851,https://en.wikipedia.org/wiki/University_of_Manchester,2
-Organization:bell_labs,org_type,laboratory,https://en.wikipedia.org/wiki/Alan_Turing,1
-Person:joan_clarke,occupation,cryptanalyst,https://en.wikipedia.org/wiki/Joan_Clarke,6
-Person:joan_clarke,occupation,mathematician,https://en.wikipedia.org/wiki/Joan_Clarke,6
-Person:joan_clarke,occupation,codebreaker,https://en.wikipedia.org/wiki/Joan_Clarke,6
-Person:joan_clarke,occupation,author,https://en.wikipedia.org/wiki/Andrew_Hodges,6
-Person:joan_clarke,occupation,physicist,https://en.wikipedia.org/wiki/Benedict_Cumberbatch,6
-Person:joan_clarke,occupation,professor,https://en.wikipedia.org/wiki/Blue_plaque,6
-Person:joan_clarke,nationality,English,https://en.wikipedia.org/wiki/Joan_Clarke,4
-Person:joan_clarke,nationality,British,https://en.wikipedia.org/wiki/Andrew_Hodges,4
-Person:joan_clarke,nationality,Polish,https://en.wikipedia.org/wiki/Banburismus,4
-Person:joan_clarke,nationality,Italian,https://en.wikipedia.org/wiki/Cryptanalysis,4
-Person:joan_clarke,birth_date,1963,https://en.wikipedia.org/wiki/Amanda_Root,18
-Person:joan_clarke,aliases,privacy,https://en.wikipedia.org/wiki/Authenticated_encryption,4
-Person:joan_clarke,aliases,additional authenticated data,https://en.wikipedia.org/wiki/Authenticated_encryption,4
-Person:joan_clarke,aliases,encrypted or encoded information because it contains a form of the original plaintext that is unreadable by a human or computer without the proper cipher to decrypt it,https://en.wikipedia.org/wiki/Ciphertext,4
-Person:joan_clarke,aliases,taper,https://en.wikipedia.org/wiki/Clergy,4
-Person:joan_clarke,death_date,2014,https://en.wikipedia.org/wiki/Benedict_Cumberbatch,19
-Person:alonzo_church_cro,birth_date,1903,https://en.wikipedia.org/wiki/Alonzo_Church,20
-Person:alonzo_church_cro,death_date,"August 11, 1995",https://en.wikipedia.org/wiki/Alonzo_Church,18
-Person:alonzo_church_cro,occupation,computer scientist,https://en.wikipedia.org/wiki/Alonzo_Church,7
-Person:alonzo_church_cro,occupation,mathematician,https://en.wikipedia.org/wiki/Alonzo_Church,7
-Person:alonzo_church_cro,occupation,logician,https://en.wikipedia.org/wiki/Alonzo_Church,7
-Person:alonzo_church_cro,occupation,philosopher,https://en.wikipedia.org/wiki/Alonzo_Church,7
-Person:alonzo_church_cro,occupation,professor,https://en.wikipedia.org/wiki/Alonzo_Church,7
-Person:alonzo_church_cro,occupation,author,https://en.wikipedia.org/wiki/Alonzo_Church,7
-Person:alonzo_church_cro,occupation,physicist,https://en.wikipedia.org/wiki/Adolf_Gr%C3%BCnbaum,7
-Person:alonzo_church_cro,nationality,American,https://en.wikipedia.org/wiki/Alonzo_Church,9
-Person:alonzo_church_cro,nationality,British,https://en.wikipedia.org/wiki/Church%E2%80%93Turing_thesis,9
-Person:alonzo_church_cro,nationality,English,https://en.wikipedia.org/wiki/A._J._Ayer,9
-Person:alonzo_church_cro,nationality,German,https://en.wikipedia.org/wiki/A._J._Ayer,9
-Person:alonzo_church_cro,nationality,Canadian,https://en.wikipedia.org/wiki/Alexander_Pruss,9
-Person:alonzo_church_cro,nationality,French,https://en.wikipedia.org/wiki/Alfred_North_Whitehead,9
-Person:alonzo_church_cro,nationality,Polish,https://en.wikipedia.org/wiki/Alfred_Tarski,9
-Person:alonzo_church_cro,nationality,Italian,https://en.wikipedia.org/wiki/Analytic_philosophy,9
-Person:alonzo_church_cro,nationality,Dutch,https://en.wikipedia.org/wiki/Analytic_philosophy,9
-Person:alonzo_church_cro,aliases,weakly computable,https://en.wikipedia.org/wiki/Algorithmically_random_sequence,4
-Person:alonzo_church_cro,aliases,Frege,https://en.wikipedia.org/wiki/Analytic_philosophy,4
-Person:alonzo_church_cro,aliases,unrestricted comprehension,https://en.wikipedia.org/wiki/Analytic_philosophy,4
-Person:alonzo_church_cro,aliases,the hurrah,https://en.wikipedia.org/wiki/Analytic_philosophy,4
-Person:alonz,birth_date,1829,https://en.wikipedia.org/wiki/Alonzo_Church,1
-Person:alonz,death_date,1909,https://en.wikipedia.org/wiki/Alonzo_Church,1
-Person:john_von_neumann,occupation,mathematician,https://en.wikipedia.org/wiki/John_von_Neumann,7
-Person:john_von_neumann,occupation,physicist,https://en.wikipedia.org/wiki/John_von_Neumann,7
-Person:john_von_neumann,occupation,computer scientist,https://en.wikipedia.org/wiki/John_von_Neumann,7
-Person:john_von_neumann,occupation,engineer,https://en.wikipedia.org/wiki/John_von_Neumann,7
-Person:john_von_neumann,occupation,professor,https://en.wikipedia.org/wiki/John_von_Neumann,7
-Person:john_von_neumann,occupation,researcher,https://en.wikipedia.org/wiki/John_von_Neumann,7
-Person:john_von_neumann,occupation,author,https://en.wikipedia.org/wiki/A_Tale_of_Two_Cities,7
-Person:john_von_neumann,nationality,Hungarian,https://en.wikipedia.org/wiki/John_von_Neumann,7
-Person:john_von_neumann,nationality,American,https://en.wikipedia.org/wiki/John_von_Neumann,7
-Person:john_von_neumann,nationality,German,https://en.wikipedia.org/wiki/John_von_Neumann,7
-Person:john_von_neumann,nationality,English,https://en.wikipedia.org/wiki/John_von_Neumann,7
-Person:john_von_neumann,nationality,Dutch,https://en.wikipedia.org/wiki/Abraham_Pais,7
-Person:john_von_neumann,nationality,Canadian,https://en.wikipedia.org/wiki/Albert_W._Tucker,7
-Person:john_von_neumann,nationality,French,https://en.wikipedia.org/wiki/Alexander_Grothendieck,7
-Person:john_von_neumann,birth_date,1935,https://en.wikipedia.org/wiki/John_von_Neumann,15
-Person:john_von_neumann,death_date,1973,https://en.wikipedia.org/wiki/John_von_Neumann,17
-Person:john_von_neumann,aliases,exceptional Jordan algebras,https://en.wikipedia.org/wiki/A._A._Albert,3
-Person:john_von_neumann,aliases,deterministic effects,https://en.wikipedia.org/wiki/Absorbed_dose,3
-Person:john_von_neumann,aliases,Alexander Tanaroff,https://en.wikipedia.org/wiki/Alexander_Grothendieck,3
-Person:claude_shannon,birth_date,1916,https://en.wikipedia.org/wiki/Claude_Shannon,19
-Person:claude_shannon,death_date,"February 24, 2001",https://en.wikipedia.org/wiki/Claude_Shannon,17
-Person:claude_shannon,occupation,mathematician,https://en.wikipedia.org/wiki/Claude_Shannon,8
-Person:claude_shannon,occupation,engineer,https://en.wikipedia.org/wiki/Claude_Shannon,8
-Person:claude_shannon,occupation,computer scientist,https://en.wikipedia.org/wiki/Claude_Shannon,8
-Person:claude_shannon,occupation,professor,https://en.wikipedia.org/wiki/Claude_Shannon,8
-Person:claude_shannon,occupation,author,https://en.wikipedia.org/wiki/Claude_Shannon,8
-Person:claude_shannon,occupation,logician,https://en.wikipedia.org/wiki/Claude_Shannon,8
-Person:claude_shannon,occupation,researcher,https://en.wikipedia.org/wiki/AT%26T_Labs,8
-Person:claude_shannon,occupation,physicist,https://en.wikipedia.org/wiki/American_Academy_of_Achievement,8
-Person:claude_shannon,nationality,American,https://en.wikipedia.org/wiki/Claude_Shannon,4
-Person:claude_shannon,nationality,Canadian,https://en.wikipedia.org/wiki/Albert_Bandura,4
-Person:claude_shannon,nationality,Polish,https://en.wikipedia.org/wiki/Albert_Sabin,4
-Person:claude_shannon,nationality,Russian,https://en.wikipedia.org/wiki/Alexander_Holevo,4
+Organization:princeton_university_orchestr,org_type,university,https://en.wikipedia.org/wiki/Alan_Turing,1
+Organization:princeton_university_orchestr,established_year,1896,https://en.wikipedia.org/wiki/Princeton_University,1
+Organization:bell_labs_comp,org_type,laboratory,https://en.wikipedia.org/wiki/Alan_Turing,1
+Organization:mancheste_university,org_type,university,https://en.wikipedia.org/wiki/Alan_Turing,1
+Organization:foreign_office_be,org_type,office,https://en.wikipedia.org/wiki/Alan_Turing,1
+Person:joan_clarke,occupation,cryptanalyst,https://en.wikipedia.org/wiki/Joan_Clarke,2
+Person:joan_clarke,occupation,codebreaker,https://en.wikipedia.org/wiki/Joan_Clarke,2
+Person:joan_clarke,nationality,English,https://en.wikipedia.org/wiki/Joan_Clarke,1
+Person:alonzo_church_croom,birth_date,1903,https://en.wikipedia.org/wiki/Alonzo_Church,5
+Person:alonzo_church_croom,death_date,"August 11, 1995",https://en.wikipedia.org/wiki/Alonzo_Church,6
+Person:alonzo_church_croom,occupation,computer scientist,https://en.wikipedia.org/wiki/Alonzo_Church,7
+Person:alonzo_church_croom,occupation,mathematician,https://en.wikipedia.org/wiki/Alonzo_Church,7
+Person:alonzo_church_croom,occupation,logician,https://en.wikipedia.org/wiki/Alonzo_Church,7
+Person:alonzo_church_croom,occupation,philosopher,https://en.wikipedia.org/wiki/Alonzo_Church,7
+Person:alonzo_church_croom,occupation,professor,https://en.wikipedia.org/wiki/Alonzo_Church,7
+Person:alonzo_church_croom,occupation,author,https://en.wikipedia.org/wiki/Alonzo_Church,7
+Person:alonzo_church_croom,occupation,physicist,https://en.wikipedia.org/wiki/Adolf_Gr%C3%BCnbaum,7
+Person:alonzo_church_croom,nationality,American,https://en.wikipedia.org/wiki/Alonzo_Church,4
+Person:alonzo_church_croom,nationality,British,https://en.wikipedia.org/wiki/Church%E2%80%93Turing_thesis,4
+Person:alonzo_church_croom,nationality,English,https://en.wikipedia.org/wiki/A._J._Ayer,4
+Person:alonzo_church_croom,nationality,German,https://en.wikipedia.org/wiki/A._J._Ayer,4
+Person:john_von_neumann,occupation,mathematician,https://en.wikipedia.org/wiki/John_von_Neumann,6
+Person:john_von_neumann,occupation,physicist,https://en.wikipedia.org/wiki/John_von_Neumann,6
+Person:john_von_neumann,occupation,computer scientist,https://en.wikipedia.org/wiki/John_von_Neumann,6
+Person:john_von_neumann,occupation,engineer,https://en.wikipedia.org/wiki/John_von_Neumann,6
+Person:john_von_neumann,occupation,professor,https://en.wikipedia.org/wiki/John_von_Neumann,6
+Person:john_von_neumann,occupation,researcher,https://en.wikipedia.org/wiki/John_von_Neumann,6
+Person:john_von_neumann,nationality,Hungarian,https://en.wikipedia.org/wiki/John_von_Neumann,2
+Person:john_von_neumann,nationality,American,https://en.wikipedia.org/wiki/John_von_Neumann,2
+Person:john_von_neumann,birth_date,1935,https://en.wikipedia.org/wiki/John_von_Neumann,3
+Person:john_von_neumann,death_date,1973,https://en.wikipedia.org/wiki/John_von_Neumann,2
+Person:claude_shannon,birth_date,1916,https://en.wikipedia.org/wiki/Claude_Shannon,7
+Person:claude_shannon,death_date,"February 24, 2001",https://en.wikipedia.org/wiki/Claude_Shannon,7
+Person:claude_shannon,occupation,mathematician,https://en.wikipedia.org/wiki/Claude_Shannon,7
+Person:claude_shannon,occupation,engineer,https://en.wikipedia.org/wiki/Claude_Shannon,7
+Person:claude_shannon,occupation,computer scientist,https://en.wikipedia.org/wiki/Claude_Shannon,7
+Person:claude_shannon,occupation,professor,https://en.wikipedia.org/wiki/Claude_Shannon,7
+Person:claude_shannon,occupation,author,https://en.wikipedia.org/wiki/Claude_Shannon,7
+Person:claude_shannon,occupation,logician,https://en.wikipedia.org/wiki/Claude_Shannon,7
+Person:claude_shannon,occupation,researcher,https://en.wikipedia.org/wiki/AT%26T_Labs,7
+Person:claude_shannon,nationality,American,https://en.wikipedia.org/wiki/Claude_Shannon,1
 Organization:bell_lab,org_type,laboratory,https://en.wikipedia.org/wiki/Claude_Shannon,1
-Person:alzheimer_s_disease,death_date,2001,https://en.wikipedia.org/wiki/Claude_Shannon,2
-Person:alzheimer_s_disease,occupation,professor,https://en.wikipedia.org/wiki/Alzheimer%27s_disease,1
-Person:alzheimer_s_disease,birth_date,2016,https://en.wikipedia.org/wiki/Alzheimer%27s_disease,1
-Person:max_newman,occupation,mathematician,https://en.wikipedia.org/wiki/Max_Newman,7
-Person:max_newman,occupation,codebreaker,https://en.wikipedia.org/wiki/Max_Newman,7
-Person:max_newman,occupation,professor,https://en.wikipedia.org/wiki/Alfred_George_Greenhill,7
-Person:max_newman,occupation,engineer,https://en.wikipedia.org/wiki/Arthur_Cayley,7
-Person:max_newman,occupation,author,https://en.wikipedia.org/wiki/Augustus_Edward_Hough_Love,7
-Person:max_newman,occupation,philosopher,https://en.wikipedia.org/wiki/Belief,7
-Person:max_newman,occupation,logician,https://en.wikipedia.org/wiki/Bertrand_Russell,7
-Person:max_newman,nationality,British,https://en.wikipedia.org/wiki/Max_Newman,4
-Person:max_newman,nationality,German,https://en.wikipedia.org/wiki/Max_Newman,4
-Person:max_newman,nationality,English,https://en.wikipedia.org/wiki/Andrew_Wiles,4
-Person:max_newman,nationality,Austrian,https://en.wikipedia.org/wiki/Bertrand_Russell,4
-Person:max_newman,birth_date,1935,https://en.wikipedia.org/wiki/Max_Newman,12
-Person:max_newman,aliases,the 'amyloid cascade hypothesis',https://en.wikipedia.org/wiki/Alzheimer%27s_disease,1
-Person:max_newman,death_date,1906,https://en.wikipedia.org/wiki/Alzheimer%27s_disease,15
-Person:donald_michie,occupation,researcher,https://en.wikipedia.org/wiki/Donald_Michie,1
+Person:max_newman,occupation,mathematician,https://en.wikipedia.org/wiki/Max_Newman,3
+Person:max_newman,occupation,codebreaker,https://en.wikipedia.org/wiki/Max_Newman,3
+Person:max_newman,occupation,professor,https://en.wikipedia.org/wiki/Alfred_George_Greenhill,3
+Person:max_newman,nationality,British,https://en.wikipedia.org/wiki/Max_Newman,3
+Person:max_newman,nationality,German,https://en.wikipedia.org/wiki/Max_Newman,3
+Person:max_newman,nationality,Russian,https://en.wikipedia.org/wiki/Abram_Besicovitch,3
+Person:max_newman,birth_date,1935,https://en.wikipedia.org/wiki/Max_Newman,2
+Person:max_newman,death_date,1970,https://en.wikipedia.org/wiki/Abram_Besicovitch,1
+Person:donald_michie,occupation,researcher,https://en.wikipedia.org/wiki/Donald_Michie,5
+Person:donald_michie,occupation,professor,https://en.wikipedia.org/wiki/Andrew_Blake_(computer_scientist),5
+Person:donald_michie,occupation,computer scientist,https://en.wikipedia.org/wiki/Artificial_intelligence,5
+Person:donald_michie,occupation,physicist,https://en.wikipedia.org/wiki/Artificial_intelligence,5
+Person:donald_michie,occupation,philosopher,https://en.wikipedia.org/wiki/Artificial_intelligence,5
 Person:donald_michie,nationality,British,https://en.wikipedia.org/wiki/Donald_Michie,1
-Person:i_j_good,occupation,professor,https://en.wikipedia.org/wiki/I._J._Good,1
-Person:i_j_good,aliases,of Moshe Oved,https://en.wikipedia.org/wiki/I._J._Good,1
+Person:donald_michie,birth_date,1959,https://en.wikipedia.org/wiki/Anne_McLaren,2
+Person:donald_michie,death_date,1974,https://en.wikipedia.org/wiki/Anne_McLaren,2
+Person:donald_michie,aliases,artificial neurons,https://en.wikipedia.org/wiki/Artificial_intelligence,1
+Person:i_j_good,occupation,professor,https://en.wikipedia.org/wiki/I._J._Good,5
+Person:i_j_good,occupation,mathematician,https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey,5
+Person:i_j_good,occupation,author,https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey,5
+Person:i_j_good,occupation,engineer,https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey,5
+Person:i_j_good,occupation,researcher,https://en.wikipedia.org/wiki/Adrian_Raftery,5
+Person:i_j_good,aliases,of Moshe Oved,https://en.wikipedia.org/wiki/I._J._Good,2
+Person:i_j_good,aliases,simply the Academy or the Motion Picture Academy,https://en.wikipedia.org/wiki/Academy_of_Motion_Picture_Arts_and_Sciences,2
+Person:i_j_good,nationality,British,https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey,1
+Person:i_j_good,birth_date,1955,https://en.wikipedia.org/wiki/Adrian_Raftery,1
 Person:gordon_welchman,occupation,mathematician,https://en.wikipedia.org/wiki/Gordon_Welchman,2
 Person:gordon_welchman,occupation,codebreaker,https://en.wikipedia.org/wiki/Gordon_Welchman,2
 Person:gordon_welchman,nationality,English,https://en.wikipedia.org/wiki/Gordon_Welchman,1
-Person:gordon_welchman,birth_date,1866,https://en.wikipedia.org/wiki/Gordon_Welchman,1
-Person:gordon_welchman,death_date,1954,https://en.wikipedia.org/wiki/Gordon_Welchman,1
-Organization:foreign_office,org_type,office,https://en.wikipedia.org/wiki/Gordon_Welchman,1
-Person:hugh_alexander,birth_date,1884,https://en.wikipedia.org/wiki/Hugh_E._Alexander,1
-Person:hugh_alexander,death_date,1957,https://en.wikipedia.org/wiki/Hugh_E._Alexander,1
-Person:hugh_alexander,occupation,author,https://en.wikipedia.org/wiki/Hugh_E._Alexander,1
-Person:robin_gandy,occupation,mathematician,https://en.wikipedia.org/wiki/Robin_Gandy,4
-Person:robin_gandy,occupation,logician,https://en.wikipedia.org/wiki/Robin_Gandy,4
-Person:robin_gandy,occupation,author,https://en.wikipedia.org/wiki/Robin_Gandy,4
-Person:robin_gandy,occupation,professor,https://en.wikipedia.org/wiki/Robin_Gandy,4
+Person:gordon_welchman,birth_date,1866,https://en.wikipedia.org/wiki/Gordon_Welchman,2
+Person:gordon_welchman,death_date,1954,https://en.wikipedia.org/wiki/Gordon_Welchman,3
+Person:hugh_alexander,birth_date,1884,https://en.wikipedia.org/wiki/Hugh_E._Alexander,9
+Person:hugh_alexander,death_date,1957,https://en.wikipedia.org/wiki/Hugh_E._Alexander,7
+Person:hugh_alexander,occupation,author,https://en.wikipedia.org/wiki/Hugh_E._Alexander,2
+Person:hugh_alexander,occupation,professor,https://en.wikipedia.org/wiki/Brazil,2
+Person:robin_gandy,occupation,mathematician,https://en.wikipedia.org/wiki/Robin_Gandy,5
+Person:robin_gandy,occupation,logician,https://en.wikipedia.org/wiki/Robin_Gandy,5
+Person:robin_gandy,occupation,author,https://en.wikipedia.org/wiki/Robin_Gandy,5
+Person:robin_gandy,occupation,professor,https://en.wikipedia.org/wiki/Robin_Gandy,5
+Person:robin_gandy,occupation,philosopher,https://en.wikipedia.org/wiki/Abbotsholme_School,5
 Person:robin_gandy,nationality,British,https://en.wikipedia.org/wiki/Robin_Gandy,1
-Person:robin_gandy,birth_date,1771,https://en.wikipedia.org/wiki/Robin_Gandy,3
-Person:robin_gandy,death_date,1843,https://en.wikipedia.org/wiki/Robin_Gandy,3
+Person:robin_gandy,birth_date,1771,https://en.wikipedia.org/wiki/Robin_Gandy,6
+Person:robin_gandy,death_date,1843,https://en.wikipedia.org/wiki/Robin_Gandy,5
+Person:robin_gandy,aliases,the Conversazione Society,https://en.wikipedia.org/wiki/Cambridge_Apostles,1
 Organization:cambridge_university,org_type,university,https://en.wikipedia.org/wiki/Robin_Gandy,1
-Organization:cambridge_university,established_year,1284,https://en.wikipedia.org/wiki/University_of_Cambridge,3
+Organization:cambridge_university,established_year,1284,https://en.wikipedia.org/wiki/University_of_Cambridge,4
 Organization:cambridg_university,org_type,university,"https://en.wikipedia.org/wiki/King%27s_College,_Cambridge",1
 Organization:oxford_for_university,org_type,university,https://en.wikipedia.org/wiki/University_of_Cambridge,1
-Organization:oxf_university,org_type,university,https://en.wikipedia.org/wiki/University_of_Cambridge,1
 Organization:oxford_university,org_type,university,https://en.wikipedia.org/wiki/University_of_Cambridge,1
-Organization:universi,established_year,2004,https://en.wikipedia.org/wiki/University_of_Manchester,1
-Person:internet_archive,occupation,researcher,https://en.wikipedia.org/wiki/Internet_Archive,1
-Organization:oxfor_university,org_type,university,https://en.wikipedia.org/wiki/Alasdair_MacIntyre,1
+Organization:university_of,org_type,university,https://en.wikipedia.org/wiki/University_of_Cambridge,1
+Organization:university_of,established_year,2004,https://en.wikipedia.org/wiki/University_of_Manchester,1
+Organization:cappella_e,established_year,1941,https://en.wikipedia.org/wiki/Princeton_University,3
+Person:auld,occupation,professor,https://en.wikipedia.org/wiki/Princeton_University,1
+Organization:government_code_cypher_school,org_type,school,https://en.wikipedia.org/wiki/Bletchley_Park,1
+Organization:university,org_type,university,https://en.wikipedia.org/wiki/University_of_Manchester,1
+Organization:university_place,org_type,university,https://en.wikipedia.org/wiki/University_of_Manchester,1
+Organization:development_office,org_type,office,"https://en.wikipedia.org/wiki/Foreign,_Commonwealth_and_Development_Office",1
+Organization:university_college,org_type,university,https://en.wikipedia.org/wiki/London,1
+Organization:government_code_and_cypher_schoo,org_type,government,https://en.wikipedia.org/wiki/Bletchley,1
+Organization:bletchley_park_by,org_type,park,https://en.wikipedia.org/wiki/Bombe,1
+Organization:government_code_and_cip,org_type,government,https://en.wikipedia.org/wiki/Cryptanalysis_of_the_Enigma,1
+Person:gordon_welchm,occupation,mathematician,https://en.wikipedia.org/wiki/Cryptanalysis_of_the_Enigma,1
+Organization:bletchley_park_wher,org_type,park,https://en.wikipedia.org/wiki/Cryptanalysis_of_the_Enigma,1
+Person:adolf_gr_nbaum,birth_date,1923,https://en.wikipedia.org/wiki/Adolf_Gr%C3%BCnbaum,1
+Person:adolf_gr_nbaum,death_date,"November 15, 2018",https://en.wikipedia.org/wiki/Adolf_Gr%C3%BCnbaum,2
+Person:adolf_gr_nbaum,occupation,philosopher,https://en.wikipedia.org/wiki/Adolf_Gr%C3%BCnbaum,2
+Person:adolf_gr_nbaum,occupation,professor,https://en.wikipedia.org/wiki/Adolf_Gr%C3%BCnbaum,2
+Person:adolf_gr_nbaum,nationality,German,https://en.wikipedia.org/wiki/Adolf_Gr%C3%BCnbaum,2
+Person:adolf_gr_nbaum,nationality,American,https://en.wikipedia.org/wiki/Adolf_Gr%C3%BCnbaum,2
+Person:allen,occupation,author,https://en.wikipedia.org/wiki/Allen_Lane,1
+Person:brazil,birth_date,1899,https://en.wikipedia.org/wiki/Brazil,2
+Person:brazil,death_date,1902,https://en.wikipedia.org/wiki/Brazil,2
+Person:brazil,aliases,the Lusophone Commonwealth,https://en.wikipedia.org/wiki/Brazil,1
+Person:brazil,occupation,physicist,https://en.wikipedia.org/wiki/Brazil,1
+Organization:brown_university,org_type,university,https://en.wikipedia.org/wiki/A_cappella,1
+Organization:cappell,established_year,2016,https://en.wikipedia.org/wiki/A_cappella,1
+Organization:oxfor_university,org_type,university,https://en.wikipedia.org/wiki/2010_United_Kingdom_student_protests,1
+Organization:government_web,org_type,government,https://en.wikipedia.org/wiki/2012_Summer_Olympics,1
+Organization:abwehr,established_year,1920,https://en.wikipedia.org/wiki/Abwehr,1
+Organization:downing_college,org_type,college,https://en.wikipedia.org/wiki/10_Downing_Street,1
+Organization:abstract,aliases,eager or call,https://en.wikipedia.org/wiki/Abstract_machine,1
+Organization:byron_university_pro,org_type,university,https://en.wikipedia.org/wiki/Ada_Lovelace,1
+Organization:university_school,org_type,university,https://en.wikipedia.org/wiki/BBC_News,1
+Organization:chichester_university,org_type,university,https://en.wikipedia.org/wiki/2020_New_Year_Honours,1
+Organization:manchester_where_university,org_type,university,https://en.wikipedia.org/wiki/Alan_Turing_Centenary_Conference,1
