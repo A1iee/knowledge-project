@@ -1,8 +1,0 @@
-data/output/ner/
-*.safetensors
-*.bin
-*.pth
-__pycache__/
-.venv/
-.env
-*.pyc
