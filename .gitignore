@@ -1,0 +1,4 @@
+data/output/ner/ 
+*.safetensors 
+*.bin 
+__pycache__/ 
