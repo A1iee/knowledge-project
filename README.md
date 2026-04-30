@@ -55,7 +55,7 @@ knowledge-project/
 |   `-- schema.md
 |-- scripts/
 |   |-- scraper.py
-|   |-- train_ner_bilstm_crf.py
+|   |-- train_ner.py
 |   |-- extract_attributes.py
 |   |-- extract_relations_bert.py
 |   |-- fuse_knowledge.py
@@ -77,7 +77,7 @@ knowledge-project/
         |-- kg_dev_nodes.jsonl
         |-- kg_dev_edges.jsonl
         |-- ner_diagnosis.json
-        `-- ner_bilstm_crf/
+        `-- ner/
             |-- config.json
             |-- model.safetensors
             |-- tokenizer.json
