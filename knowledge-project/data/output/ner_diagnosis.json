@@ -1,0 +1,499 @@
+{
+  "predicted_type_counter": {
+    "Person": 248,
+    "Concept": 74,
+    "Location": 285,
+    "Organization": 84,
+    "Event": 32,
+    "Artifact": 38,
+    "Publication": 13,
+    "Honor": 16
+  },
+  "expected_type_counter": {
+    "Organization": 50,
+    "Event": 20,
+    "Artifact": 17,
+    "Person": 66,
+    "Publication": 5,
+    "Honor": 79,
+    "Concept": 9
+  },
+  "missing_type_counter": {
+    "Person": 7,
+    "Honor": 73,
+    "Artifact": 4
+  },
+  "predicted_examples": {
+    "Person": [
+      {
+        "doc_id": "wiki_alan_turing_001",
+        "sent_id": "wiki_alan_turing_001__sent000",
+        "text": "Alan Mathison Turing",
+        "sentence": "Alan Mathison Turing (; 23 June 1912 – 7 June 1954) was an English mathematician, computer scientist, logician, cryptanalyst, philosopher and theoretical biologist."
+      },
+      {
+        "doc_id": "wiki_alan_turing_001",
+        "sent_id": "wiki_alan_turing_001__sent002",
+        "text": "Turing",
+        "sentence": "Turing is widely considered to be the father of theoretical computer science."
+      },
+      {
+        "doc_id": "wiki_alan_turing_002",
+        "sent_id": "wiki_alan_turing_002__sent000",
+        "text": "Turing",
+        "sentence": "Born in London, Turing was raised in southern England."
+      },
+      {
+        "doc_id": "wiki_alan_turing_002",
+        "sent_id": "wiki_alan_turing_002__sent001",
+        "text": "He",
+        "sentence": "He graduated from King's College, Cambridge, and in 1938, earned a doctorate degree from Princeton University."
+      },
+      {
+        "doc_id": "wiki_alan_turing_002",
+        "sent_id": "wiki_alan_turing_002__sent002",
+        "text": "Turing",
+        "sentence": "During World War II, Turing worked for the Government Code and Cypher School at Bletchley Park, Britain's codebreaking centre that produced Ultra intelligence."
+      }
+    ],
+    "Concept": [
+      {
+        "doc_id": "wiki_alan_turing_001",
+        "sent_id": "wiki_alan_turing_001__sent001",
+        "text": "Turing machine",
+        "sentence": "He was highly influential in the development of theoretical computer science, providing a formalisation of the concepts of algorithm and computation with the Turing machine, which can be considered a model of a general-purpose computer."
+      },
+      {
+        "doc_id": "wiki_joan_clarke_007",
+        "sent_id": "wiki_joan_clarke_007__sent001",
+        "text": "Banburismus",
+        "sentence": "She quickly became the only female practitioner of Banburismus, a cryptanalytic process developed by Alan Turing which reduced the need for bombes: electromechanical devices as used by British cryptologists Welchman and Turing to decipher German encrypted messages during World War II."
+      },
+      {
+        "doc_id": "wiki_alonzo_church_001",
+        "sent_id": "wiki_alonzo_church_001__sent001",
+        "text": "decision problem",
+        "sentence": "He is best known for the lambda calculus, the Church–Turing thesis, proving the unsolvability of the Entscheidungsproblem (\"decision problem\"), the Frege–Church ontology, and the Church–Rosser theorem."
+      },
+      {
+        "doc_id": "wiki_max_newman_008",
+        "sent_id": "wiki_max_newman_008__sent001",
+        "text": "decision problem",
+        "sentence": "His 1935 lectures on the Foundations of Mathematics and Gödel's theorem inspired Alan Turing to embark on his work on the Entscheidungsproblem (decision problem) that had been posed by Hilbert and Ackermann in 1928."
+      },
+      {
+        "doc_id": "wiki_robin_gandy_005",
+        "sent_id": "wiki_robin_gandy_005__sent002",
+        "text": "Turing machine",
+        "sentence": "He also made a significant contribution to the understanding of the Church–Turing thesis, and his generalisation of the Turing machine is called a Gandy machine."
+      }
+    ],
+    "Location": [
+      {
+        "doc_id": "wiki_alan_turing_002",
+        "sent_id": "wiki_alan_turing_002__sent000",
+        "text": "London",
+        "sentence": "Born in London, Turing was raised in southern England."
+      },
+      {
+        "doc_id": "wiki_alan_turing_002",
+        "sent_id": "wiki_alan_turing_002__sent000",
+        "text": "England",
+        "sentence": "Born in London, Turing was raised in southern England."
+      },
+      {
+        "doc_id": "wiki_alan_turing_002",
+        "sent_id": "wiki_alan_turing_002__sent002",
+        "text": "Britain",
+        "sentence": "During World War II, Turing worked for the Government Code and Cypher School at Bletchley Park, Britain's codebreaking centre that produced Ultra intelligence."
+      },
+      {
+        "doc_id": "wiki_alan_turing_003",
+        "sent_id": "wiki_alan_turing_003__sent001",
+        "text": "Manchester",
+        "sentence": "In 1948, Turing joined Max Newman's Computing Machine Laboratory at the University of Manchester, where he contributed to the development of early Manchester computers and became interested in mathematical biology."
+      },
+      {
+        "doc_id": "wiki_alan_turing_007",
+        "sent_id": "wiki_alan_turing_007__sent000",
+        "text": "Maida Vale",
+        "sentence": "Turing was born in Maida Vale, London, while his father, Julius Mathison Turing, was on leave from his position with the Indian Civil Service (ICS) of the British Raj government at Chatrapur, then in the Madras Presidency and presently in Odisha state, in India."
+      }
+    ],
+    "Organization": [
+      {
+        "doc_id": "wiki_alan_turing_002",
+        "sent_id": "wiki_alan_turing_002__sent001",
+        "text": "King's College, Cambridge",
+        "sentence": "He graduated from King's College, Cambridge, and in 1938, earned a doctorate degree from Princeton University."
+      },
+      {
+        "doc_id": "wiki_alan_turing_002",
+        "sent_id": "wiki_alan_turing_002__sent001",
+        "text": "Princeton University",
+        "sentence": "He graduated from King's College, Cambridge, and in 1938, earned a doctorate degree from Princeton University."
+      },
+      {
+        "doc_id": "wiki_alan_turing_002",
+        "sent_id": "wiki_alan_turing_002__sent002",
+        "text": "Government Code and Cypher School",
+        "sentence": "During World War II, Turing worked for the Government Code and Cypher School at Bletchley Park, Britain's codebreaking centre that produced Ultra intelligence."
+      },
+      {
+        "doc_id": "wiki_alan_turing_002",
+        "sent_id": "wiki_alan_turing_002__sent002",
+        "text": "Bletchley Park",
+        "sentence": "During World War II, Turing worked for the Government Code and Cypher School at Bletchley Park, Britain's codebreaking centre that produced Ultra intelligence."
+      },
+      {
+        "doc_id": "wiki_alan_turing_002",
+        "sent_id": "wiki_alan_turing_002__sent003",
+        "text": "Hut 8",
+        "sentence": "He led Hut 8, the section responsible for German naval cryptanalysis."
+      }
+    ],
+    "Event": [
+      {
+        "doc_id": "wiki_alan_turing_002",
+        "sent_id": "wiki_alan_turing_002__sent002",
+        "text": "World War II",
+        "sentence": "During World War II, Turing worked for the Government Code and Cypher School at Bletchley Park, Britain's codebreaking centre that produced Ultra intelligence."
+      },
+      {
+        "doc_id": "wiki_alan_turing_002",
+        "sent_id": "wiki_alan_turing_002__sent005",
+        "text": "Battle of the Atlantic",
+        "sentence": "He played a crucial role in cracking intercepted messages that enabled the Allies to defeat the Axis powers in the Battle of the Atlantic and other engagements."
+      },
+      {
+        "doc_id": "wiki_alan_turing_004",
+        "sent_id": "wiki_alan_turing_004__sent006",
+        "text": "Alan Turing law",
+        "sentence": "The term \"Alan Turing law\" is used informally to refer to a 2017 law in the UK that retroactively pardoned men cautioned or convicted under historical legislation that outlawed homosexual acts."
+      },
+      {
+        "doc_id": "wiki_alan_turing_006",
+        "sent_id": "wiki_alan_turing_006__sent001",
+        "text": "Second World War",
+        "sentence": "Turing was in large part responsible not only for the concept of computers, incisive theorems about their powers, and a clear vision of the possibility of computer minds, but also for the cracking of German ciphers during the Second World War."
+      },
+      {
+        "doc_id": "wiki_joan_clarke_001",
+        "sent_id": "wiki_joan_clarke_001__sent000",
+        "text": "Second World War",
+        "sentence": "Joan Elisabeth Lowther Murray, MBE (née Clarke; 24 June 1917 – 4 September 1996) was an English cryptanalyst and numismatist who worked as a code-breaker at Bletchley Park during the Second World War."
+      }
+    ],
+    "Artifact": [
+      {
+        "doc_id": "wiki_alan_turing_002",
+        "sent_id": "wiki_alan_turing_002__sent002",
+        "text": "Ultra intelligence",
+        "sentence": "During World War II, Turing worked for the Government Code and Cypher School at Bletchley Park, Britain's codebreaking centre that produced Ultra intelligence."
+      },
+      {
+        "doc_id": "wiki_alan_turing_002",
+        "sent_id": "wiki_alan_turing_002__sent004",
+        "text": "Enigma machine",
+        "sentence": "Turing devised techniques for speeding the breaking of German ciphers, including improvements to the pre-war Polish bomba method, an electromechanical machine that could find settings for the Enigma machine."
+      },
+      {
+        "doc_id": "wiki_alan_turing_003",
+        "sent_id": "wiki_alan_turing_003__sent000",
+        "text": "Automatic Computing Engine",
+        "sentence": "After the war, Turing worked at the National Physical Laboratory, where he designed the Automatic Computing Engine, one of the first designs for a stored-program computer."
+      },
+      {
+        "doc_id": "wiki_joan_clarke_005",
+        "sent_id": "wiki_joan_clarke_005__sent001",
+        "text": "Enigma machine",
+        "sentence": "The Germans used the Enigma machine to encrypt their messages, which they believed to be unbreakable."
+      },
+      {
+        "doc_id": "wiki_joan_clarke_009",
+        "sent_id": "wiki_joan_clarke_009__sent000",
+        "text": "Enigma machine",
+        "sentence": "An Enigma machine of four rotors was introduced in 1942 which stymied Hut 8's decryption efforts and led to German U-boats successfully attacking Allied shipping convoys again."
+      }
+    ],
+    "Publication": [
+      {
+        "doc_id": "wiki_alan_turing_003",
+        "sent_id": "wiki_alan_turing_003__sent002",
+        "text": "the chemical basis of morphogenesis and predicted oscillating chemical reactions such as the Belousov",
+        "sentence": "Turing wrote on the chemical basis of morphogenesis and predicted oscillating chemical reactions such as the Belousov–Zhabotinsky reaction, first observed in the 1960s."
+      },
+      {
+        "doc_id": "wiki_max_newman_008",
+        "sent_id": "wiki_max_newman_008__sent003",
+        "text": "On Computable Numbers",
+        "sentence": "In spring 1936, Newman was presented by Turing with a draft of \"On Computable Numbers with an Application to the Entscheidungsproblem\"."
+      },
+      {
+        "doc_id": "wiki_gordon_welchman_005",
+        "sent_id": "wiki_gordon_welchman_005__sent000",
+        "text": "traffic analysis",
+        "sentence": "Much of Welchman's work at Bletchley was in \"traffic analysis\" of encrypted German communications."
+      },
+      {
+        "doc_id": "wiki_turing_test_002",
+        "sent_id": "wiki_turing_test_002__sent000",
+        "text": "Computing Machinery and Intelligence",
+        "sentence": "The test was introduced by Turing in his 1950 paper \"Computing Machinery and Intelligence\" while working at the University of Manchester."
+      },
+      {
+        "doc_id": "wiki_church_turing_thesis_010",
+        "sent_id": "wiki_church_turing_thesis_010__sent002",
+        "text": "Systems of Logic Based on Ordinals",
+        "sentence": "thesis Systems of Logic Based on Ordinals, supervised by Church, are virtually the same:"
+      }
+    ],
+    "Honor": [
+      {
+        "doc_id": "wiki_alan_turing_005",
+        "sent_id": "wiki_alan_turing_005__sent001",
+        "text": "Bank of England £50 note",
+        "sentence": "His portrait appears on the Bank of England £50 note, first released on 23 June 2021 to coincide with his birthday."
+      },
+      {
+        "doc_id": "wiki_alan_turing_005",
+        "sent_id": "wiki_alan_turing_005__sent002",
+        "text": "BBC series",
+        "sentence": "The audience vote in a 2019 BBC series named Turing the greatest scientist of the 20th century."
+      },
+      {
+        "doc_id": "wiki_alan_turing_008",
+        "sent_id": "wiki_alan_turing_008__sent001",
+        "text": "blue plaque",
+        "sentence": "However, both Julius and Ethel wanted their children to be brought up in Britain, so they moved to Maida Vale, London, where Alan Turing was born on 23 June 1912, as recorded by a blue plaque on the outside of the house of his birth, later the Colonnade Hotel."
+      },
+      {
+        "doc_id": "wiki_alan_turing_009",
+        "sent_id": "wiki_alan_turing_009__sent001",
+        "text": "blue plaque",
+        "sentence": "At Hastings, Turing stayed at Baston Lodge, Upper Maze Hill, St Leonards-on-Sea, now marked with a blue plaque."
+      },
+      {
+        "doc_id": "wiki_alan_turing_010",
+        "sent_id": "wiki_alan_turing_010__sent001",
+        "text": "blue plaque",
+        "sentence": "The location is also marked with a blue plaque."
+      }
+    ]
+  },
+  "missing_examples": {
+    "Person": [
+      {
+        "doc_id": "wiki_alan_turing_004",
+        "sent_id": "wiki_alan_turing_004__sent006",
+        "expected_text": "Alan Turing",
+        "sentence": "The term \"Alan Turing law\" is used informally to refer to a 2017 law in the UK that retroactively pardoned men cautioned or convicted under historical legislation that outlawed homosexual acts.",
+        "predicted_entities": [
+          {
+            "text": "Alan Turing law",
+            "label": "Event",
+            "start": 10,
+            "end": 25
+          }
+        ]
+      },
+      {
+        "doc_id": "wiki_alan_turing_law_001",
+        "sent_id": "wiki_alan_turing_law_001__sent000",
+        "expected_text": "Alan Turing",
+        "sentence": "\"Alan Turing law\" is an informal term for the portion of the Policing and Crime Act 2017 which serves to pardon men who were cautioned or convicted under obsolete laws criminalising homosexual acts.",
+        "predicted_entities": [
+          {
+            "text": "Alan Turing law",
+            "label": "Event",
+            "start": 1,
+            "end": 16
+          }
+        ]
+      },
+      {
+        "doc_id": "wiki_alan_turing_law_002",
+        "sent_id": "wiki_alan_turing_law_002__sent000",
+        "expected_text": "Alan Turing",
+        "sentence": "Several proposals had been put forward for an Alan Turing law, and introducing such a law was government policy since 2015.",
+        "predicted_entities": [
+          {
+            "text": "Alan Turing law",
+            "label": "Event",
+            "start": 46,
+            "end": 61
+          }
+        ]
+      },
+      {
+        "doc_id": "wiki_alan_turing_law_002",
+        "sent_id": "wiki_alan_turing_law_002__sent002",
+        "expected_text": "Alan Turing",
+        "sentence": "A rival bill to implement the Alan Turing law, in second reading at the time of the government announcement, was filibustered.",
+        "predicted_entities": [
+          {
+            "text": "Alan Turing law",
+            "label": "Event",
+            "start": 30,
+            "end": 45
+          }
+        ]
+      },
+      {
+        "doc_id": "wiki_alan_turing_law_003",
+        "sent_id": "wiki_alan_turing_law_003__sent000",
+        "expected_text": "Alan Turing",
+        "sentence": "Manchester Withington MP John Leech, often described as 'the architect' of the Alan Turing Law, led a high-profile campaign to pardon Turing and submitted several bills to parliament, leading to the eventual posthumous pardon.",
+        "predicted_entities": [
+          {
+            "text": "Manchester",
+            "label": "Location",
+            "start": 0,
+            "end": 10
+          },
+          {
+            "text": "Alan Turing Law",
+            "label": "Event",
+            "start": 79,
+            "end": 94
+          },
+          {
+            "text": "Turing",
+            "label": "Person",
+            "start": 134,
+            "end": 140
+          },
+          {
+            "text": "posthumous pardon",
+            "label": "Honor",
+            "start": 208,
+            "end": 225
+          }
+        ]
+      }
+    ],
+    "Honor": [
+      {
+        "doc_id": "wiki_joan_clarke_007",
+        "sent_id": "wiki_joan_clarke_007__sent001",
+        "expected_text": "MBE",
+        "sentence": "She quickly became the only female practitioner of Banburismus, a cryptanalytic process developed by Alan Turing which reduced the need for bombes: electromechanical devices as used by British cryptologists Welchman and Turing to decipher German encrypted messages during World War II.",
+        "predicted_entities": [
+          {
+            "text": "Banburismus",
+            "label": "Concept",
+            "start": 51,
+            "end": 62
+          },
+          {
+            "text": "Alan Turing",
+            "label": "Person",
+            "start": 101,
+            "end": 112
+          },
+          {
+            "text": "Turing",
+            "label": "Person",
+            "start": 220,
+            "end": 226
+          },
+          {
+            "text": "World War II",
+            "label": "Event",
+            "start": 272,
+            "end": 284
+          }
+        ]
+      },
+      {
+        "doc_id": "wiki_joan_clarke_008",
+        "sent_id": "wiki_joan_clarke_008__sent002",
+        "expected_text": "MBE",
+        "sentence": "By November, Clarke and her team were able to reduce this number to 62,000 tons.",
+        "predicted_entities": []
+      },
+      {
+        "doc_id": "wiki_alonzo_church_008",
+        "sent_id": "wiki_alonzo_church_008__sent000",
+        "expected_text": "MBE",
+        "sentence": "Church was a lifelong member of the Presbyterian church.",
+        "predicted_entities": []
+      },
+      {
+        "doc_id": "wiki_max_newman_002",
+        "sent_id": "wiki_max_newman_002__sent001",
+        "expected_text": "MBE",
+        "sentence": "His father was Herman Alexander Neumann, originally from the German city of Bromberg (now in Poland), who had emigrated with his family to London at the age of 15.",
+        "predicted_entities": [
+          {
+            "text": "London",
+            "label": "Location",
+            "start": 139,
+            "end": 145
+          }
+        ]
+      },
+      {
+        "doc_id": "wiki_max_newman_007",
+        "sent_id": "wiki_max_newman_007__sent000",
+        "expected_text": "MBE",
+        "sentence": "On 5 November 1923, Newman was elected a Fellow of St John's.",
+        "predicted_entities": []
+      }
+    ],
+    "Artifact": [
+      {
+        "doc_id": "wiki_joan_clarke_009",
+        "sent_id": "wiki_joan_clarke_009__sent002",
+        "expected_text": "Enigma machine",
+        "sentence": "Over a million German naval messages were decrypted from the Enigma machines by Hut 8.",
+        "predicted_entities": [
+          {
+            "text": "Hut 8",
+            "label": "Organization",
+            "start": 80,
+            "end": 85
+          }
+        ]
+      },
+      {
+        "doc_id": "wiki_bombe_003",
+        "sent_id": "wiki_bombe_003__sent000",
+        "expected_text": "Enigma machine",
+        "sentence": "The bombe was designed to discover some of the daily settings of the Enigma machines on the various German military networks: specifically, the set of rotors in use and their positions in the machine; the rotor core start positions for the message—the message key—and one of the wirings of the plugboard.",
+        "predicted_entities": [
+          {
+            "text": "bombe",
+            "label": "Artifact",
+            "start": 4,
+            "end": 9
+          }
+        ]
+      },
+      {
+        "doc_id": "wiki_bombe_009",
+        "sent_id": "wiki_bombe_009__sent000",
+        "expected_text": "Enigma machine",
+        "sentence": "In the lead-up to World War II, the Germans made successive improvements to their military Enigma machines.",
+        "predicted_entities": [
+          {
+            "text": "World War II",
+            "label": "Event",
+            "start": 18,
+            "end": 30
+          }
+        ]
+      },
+      {
+        "doc_id": "wiki_enigma_machine_007",
+        "sent_id": "wiki_enigma_machine_007__sent005",
+        "expected_text": "Enigma machine",
+        "sentence": "Consequently, the Polish mathematicians were able to build their own Enigma machines, dubbed \"Enigma doubles\".",
+        "predicted_entities": []
+      }
+    ]
+  },
+  "doc_counter": {
+    "focus_docs": 69
+  }
+}

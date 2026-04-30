@@ -1,0 +1,20 @@
+{
+  "base_model": "distilbert-base-uncased",
+  "max_length": 256,
+  "labels": [
+    "Person",
+    "Organization",
+    "Location",
+    "Concept",
+    "Artifact",
+    "Event",
+    "Publication",
+    "Honor"
+  ],
+  "center_aliases": [
+    "Alan Mathison Turing",
+    "Alan Turing",
+    "A. M. Turing",
+    "Turing"
+  ]
+}
